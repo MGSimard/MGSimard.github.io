@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background: url("https://i.imgur.com/9vWlBG0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+}
+
+#image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#title, #subtitle, figcaption, .bottext {
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  font-family: Oswald, arial, sans-serif;
+  color: white;
+}
+
+#title, #subtitle, h2 {
+  font-family: Cinzel, sans-serif;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  backdrop-filter: blur(25px);
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: -4em;
+  color: white;
+  backdrop-filter: blur(25px);
+  font-weight: 200;
+}
+
+section {
+  padding-top: 30px;
+  margin: auto;
+  width: 90%;
+}
+
+.bottext {
+  padding-bottom: 15px;
+}
+
+a {
+  color: #f24949;
+}
+
+h1 {
+  padding: 15px 15px 0 15px;
+  color: #49a3f2;
+  text-shadow: 2px 2px #000;
+}
+
+ul {
+  margin-bottom: 15px;
+}
+
+.light {
+  font-weight: 200;
+}
+
+hr {
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
