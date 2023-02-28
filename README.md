@@ -1,4 +1,3 @@
-# RWD-CertProj-SurveyForm
-Responsive Web Design Certification Project - Survey Form
+# Responsive Web Design Certification projects
 FreeCodeCamp.org
 MGSimard
