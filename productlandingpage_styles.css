@@ -86,7 +86,7 @@ main {
   max-width: 1200px;
 }
 
-#pre-order {
+#Pre-Order {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -171,7 +171,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-  #pre-order {
+  #Pre-Order {
     flex-direction: column;
   }
   header {
