@@ -1,0 +1,257 @@
+* {
+  border-sizing: border-box;
+  /* border: 1px solid rgba(255,0,0,0.3); */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: #aaa;
+  --text-highlight: red;
+  --text-darkhighlight: #611010;
+}
+
+html {
+  font-size: 16px;
+  font-family: Roboto, "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  background: var(--text-darkhighlight);
+  height: 10vh;
+  z-index: 1;
+  box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.5)
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+nav > ul > li {
+  height: 100%;
+  flex: 1;
+}
+
+nav > ul > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight:600;
+  font-size: 1.2em;
+}
+
+nav > ul > li > a:hover {
+  background: #000;
+  color: var(--text-highlight);
+}
+
+.logolink {
+  flex: 0.5;
+  font-size: 2em;
+}
+
+#welcome-section {
+  text-align: center;
+}
+
+.heading {
+  max-width: 1200px;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: var(--text-primary);
+  border-bottom: 5px solid red;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.subheading {
+  color: var(--text-highlight);
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+
+.subheading-descriptor {
+  color: var(--text-secondary);
+  line-height: 1.5em;
+  padding: 5px;
+}
+
+.pad-top {
+  padding-top: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 1em;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: url(https://i.imgur.com/1brchvW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  grid-gap: 60px;
+  padding-bottom: 6em;
+}
+
+.project-tile {
+  position: relative;
+  width: 100%;
+}
+
+.projects-deviate {
+  scroll-margin-top: 10vh;
+}
+
+figure img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  font-size: 1.5em;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+}
+
+.project-tile:hover {
+  transform: scale(105%);
+
+}
+
+.project-tile:hover > figure img {
+  filter: blur(5px);
+}
+
+.project-tile:hover > figure > figcaption {
+  color: var(--text-highlight);
+}
+
+#projects {
+  padding-bottom: 2em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background: url(https://i.imgur.com/1brchvW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.faicon {
+  font-size: 4em;
+  filter: drop-shadow(2px 2px 5px #000);
+}
+
+.faicon:hover {
+  color: var(--text-highlight);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background: #000;
+  color: #444;
+}
+
+ footer p a {
+   color: #444;
+   text-decoration: underline;
+ }
+
+ footer p a:hover {
+   color: var(--text-highlight);
+ }
+
+ @media (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 20px;
+  }
+  nav {
+    height: 15vh;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav > ul > li {
+    width: 100%;
+  }
+}
