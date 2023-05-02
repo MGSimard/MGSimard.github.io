@@ -1,3 +1,2 @@
-# Responsive Web Design Certification Projects
-FreeCodeCamp.org
-MGSimard
+# Front-End Development Projects
+## - MGSimard -
