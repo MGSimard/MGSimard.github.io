@@ -1,0 +1,199 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primaryRed: hsl(0, 100%, 67%);
+    --primaryYellow: hsl(39, 100%, 56%);
+    --primaryTeal: hsl(166, 100%, 37%);
+    --primaryBlue: hsl(234, 85%, 45%);
+    --gradBlue: hsl(252, 100%, 67%), hsl(241, 81%, 54%);
+    --gradViolet: hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0);
+    --paleBlue: hsl(221, 100%, 96%);
+    --darkBlue: hsl(224, 30%, 27%);
+    --lavender: hsl(241, 100%, 89%);
+}
+
+/*META*/
+html {
+    font-size: 18px;
+    font-family: HankenGrotesk;
+}
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: white;
+}
+.app-section {
+    width: 100%;
+    padding: 1.5rem;
+}
+/**/
+/*BLUE SCORE SECTION*/
+#sectionResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--gradBlue));
+    border-radius: 0 0 40px 40px;
+    text-align: center;
+}
+#sectionResult {
+    color: white;
+}
+#score-round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(var(--gradViolet));
+    border-radius: 50%;
+    margin: 1rem;
+}
+#user-score {
+    font-weight: 800;
+    color: white;
+    font-size: 3rem;
+}
+#score-round p {
+    color: var(--lavender);
+}
+.subtext {
+    color: var(--lavender);
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+/**/
+/*WHITE SUMMARY SECTION*/
+#sumTitle {
+    margin-bottom: 1.5rem;
+}
+
+/*SCORE CARDS*/
+.flex-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    height: 3rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+.flex-card img {
+    margin-right: 0.8rem;
+}
+.flex-card h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.flex-card div {
+    color: hsl(224, 30%, 70%);
+    font-weight: 700;
+}
+.sumNum {
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+.cOne {background-color: hsl(0 100% 95%);}
+.cOne h3 {color: var(--primaryRed);}
+.cTwo {background-color: hsl(39 100% 95%);}
+.cTwo h3 {color: var(--primaryYellow);}
+.cThree {background-color: hsl(166 100% 95%);}
+.cThree h3 {color: var(--primaryTeal);}
+.cFour {background-color: hsl(234 85% 95%);}
+.cFour h3 {color: var(--primaryBlue);}
+
+button {
+    margin-top: 0.5rem;
+    background-color: var(--darkBlue);
+    border-radius: 99rem;
+    border: none;
+    height: 3rem;
+    font-family: HankenGrotesk;
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: var(--primaryBlue);
+    cursor: pointer;
+}
+/**/
+/*MODULARS*/
+.flex {
+    display: flex;
+}
+.flex-down {
+    display: flex;
+    flex-direction: column;
+}
+/**/
+/*FOOTER*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/**/
+/*MEDIA QUERY*/
+@media only screen and (min-width: 768px) {
+    main {
+        height: 512px;
+        margin: auto;
+        max-width: 768px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #sectionResult {
+        height: 100%;
+        border-radius: 40px;
+    }
+    #sectionSummary {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #score-round {  
+        width: 200px;
+        height: 200px;
+    }
+    #sectionResult h2 {
+        font-size: 2rem;
+    }
+    #sectionResult h3 {
+        font-size: 1.5rem;
+    }
+    #user-score {
+        font-size: 4rem;
+    }
+    .subtext {
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
+}
+/**/
