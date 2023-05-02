@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://mgsimard.github.io/results-summary-component/index.html
+- Live Site URL: https://mgsimard.github.io/frontendmentor/results-summary-component/index.html
 
 ## My process
 
