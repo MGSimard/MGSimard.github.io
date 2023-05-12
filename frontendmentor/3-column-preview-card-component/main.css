@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --vDarkCyan: hsl(179, 100%, 13%);
+    --vLightGray: hsl(0, 0%, 95%);      /*Background, headings, buttons*/
+}
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+html {
+    font-family: 'Lexend Deca', sans-serif; 
+    /*'Big Shoulders Display', cursive; 'Lexend Deca', sans-serif; */
+    font-size: 15px;
+}
+body {
+    background-color: var(--vLightGray);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/**/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    max-width: 375px;
+    padding: 24px;
+    margin: 0 auto;
+}
+.class-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.vehicle-class {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+}
+#vc-sedans {background-color: var(--brightOrange)}
+#vc-suvs {background-color: var(--darkCyan)}
+#vc-luxury {background-color: var(--vDarkCyan)}
+.vehicle-class img {
+    width: 68px;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+.vehicle-class h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: var(--vLightGray);
+    margin-bottom: 2rem;
+    opacity: 0.98;
+}
+.vehicle-class p {
+    line-height: 1.6rem;
+    color: var(--vLightGray);
+    opacity: 0.8;
+}
+.vehicle-class button {
+    height: 3.33rem;
+    width: 9.73rem;
+    background-color: var(--vLightGray);
+    border: 2px solid var(--vLightGray);
+    border-radius: 999rem;
+    margin-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.vehicle-class button:hover {
+    background: none!important;
+    color: var(--vLightGray)!important;
+}
+#vc-sedans button {color: var(--brightOrange)}
+#vc-suvs button {color: var(--darkCyan)}
+#vc-luxury button {color: var(--vDarkCyan)}
+
+@media only screen and (min-width: 768px) {
+    main {
+        max-width: 968px;
+    }
+    .class-container {
+        flex-direction: row;
+    }
+    .vehicle-class {
+        width: 33.33%;
+        min-height: 500px;
+    }
+    .vehicle-class button {
+        margin-top: auto;
+    }
+}
