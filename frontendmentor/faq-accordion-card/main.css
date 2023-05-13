@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primaryBlue: hsl(238, 29%, 16%);
+    --primaryRed: hsl(14, 88%, 65%);
+    --grayBlue1: hsl(237, 12%, 33%);
+    --grayBlue2: hsl(240, 6%, 50%);
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    --bgGradient: linear-gradient(var(--softViolet), var(--softBlue));
+    --clrDivider: hsl(240, 5%, 91%);
+}
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+html {
+    font-family: 'Kumbh Sans', sans-serif; /*400 & 700*/
+    font-size: 12px;
+    font-weight: 400;
+}
+body {
+    background: var(--bgGradient);
+}
+.attribution { color: white;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 20%, 85%); }
+.attribution a:hover {color: hsl(35, 90%, 50%)}
+/**/
+main {
+    min-height: 100%;
+    width: 375px;
+    margin: 0 auto;
+    padding: 24px;
+}
+.faq-container {
+    width: 100%;
+    padding: 0 24px 3.5rem 24px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10rem;
+}
+.images-container {
+    position: relative;
+    margin: 0 auto;
+    width: 237px;
+    height: 11rem;
+}
+.images-container img {
+    position: absolute;
+}
+.img-dsk {
+    display: none;
+}
+#mobile-shadow {
+    top: 0;
+    z-index: 12;
+}
+#mobile-image {
+    z-index: 11;
+    top: -9rem;
+    left: 0;
+    width:237px;
+    height:180px;
+}
+.faq-container h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    color: var(--primaryBlue);
+    margin-bottom: 1rem;
+}
+details {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--clrDivider);
+}
+details[open] summary {
+    font-weight: 700;
+    color: var(--primaryBlue);
+}
+details[open] img {
+    transform: rotate(180deg);
+}
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--grayBlue1);
+}
+details summary:hover {
+    color: var(--primaryRed);
+}
+details summary img {
+    width: 10px;
+    height: 6px;
+}
+details p {
+    color: var(--grayBlue2);
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 968px) {
+    .img-mbl {
+        display: none;
+    }
+    .img-dsk {
+        display: block;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 968px;
+    }
+    .half {
+        width: 50%;
+    }
+    .faq-container {
+        display: flex;
+        padding: 0;
+        margin-top: 0;
+    }
+    .images-container {
+        height: auto;
+        overflow: hidden;
+    }
+    /*Holy jank part 2*/
+    #desktop-box {
+        position: absolute;
+        z-index: 23;
+        top: 17rem;
+        left: -46rem;
+        transition: left 0.1s ease-out;
+    }
+    /*Holy jank part 3*/
+    details:hover ~ #desktop-box {
+        left: -49.5rem;
+    }
+    #desktop-image {
+        z-index: 22;
+        top: 6rem;
+        left: -7rem;
+    }
+    #desktop-shadow {
+        z-index: 21;
+        top: -25em;
+        left: -48rem;
+    }
+    .faq-container h1 {
+        text-align: start;
+    }
+    .accordions {
+        position: relative;
+        padding: 70px 95px 70px 15px;        
+    }
+}
