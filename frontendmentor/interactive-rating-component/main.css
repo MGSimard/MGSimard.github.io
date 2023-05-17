@@ -163,6 +163,7 @@ main {
     letter-spacing: 0rem;
   }
   .btn-submit  {
+    font-size: 1rem;
     margin-top: 1.84rem;
   }
   #step-two img {
