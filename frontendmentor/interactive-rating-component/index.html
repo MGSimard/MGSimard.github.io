@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div id="step-one" class="card">
+      <img src="images/icon-star.svg" class="img-star no-highlight" alt="">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <p id="error" class="error disabled">* Please select a rating!</p>
+      <div class="ratings no-highlight">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>      
+      <button class="btn-submit no-highlight" onclick="submitScore()">Submit</button>
+    </div>
+    <div id="step-two" class="card disabled">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <div class="result">You selected <span id="selected-rating" class="selected-rating">0</span> out of 5</div>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p></div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"  target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/MGSimard" target="_blank">MGSimard</a>.
+    </div>
+  </main>  
+  <script src="./main.js"></script>
+</body>
+</html>
