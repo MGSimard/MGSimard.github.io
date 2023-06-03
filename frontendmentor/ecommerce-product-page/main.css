@@ -41,6 +41,9 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
   opacity: 0;
   margin-left: -14px;
 }
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /**/
 /* HEADER/NAVBAR */
 #product-lightbox .close-svg {
