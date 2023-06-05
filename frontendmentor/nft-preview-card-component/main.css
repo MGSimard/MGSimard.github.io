@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*PRIMARY*/
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /*NEUTRAL*/
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --cardLine: hsl(215, 32%, 27%);
+}
+html, body {
+  min-height: 100vh;
+  height: 100%;
+}
+html {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif; /*WEIGHT 300 LIGHT, 400 REGULAR, 600 BOLD*/
+}
+body {
+  background-color: var(--mainBG);
+}
+.attribution { color: white; font-size: 11px; text-align: center; margin-top: 1rem; }
+.attribution a { color: var(--softBlue); }
+a {color: inherit; text-decoration: none;}
+/**/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.33rem;
+}
+.nft-card {
+  background-color: var(--cardBG);
+  padding: 1.33rem;
+  border-radius: 0.66rem;
+}
+.nftc-vis {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 1rem;
+  border-radius: 0.33rem;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nftc-vis:hover .nftc-vis-overlay {
+  display: flex;
+}
+.nftc-vis-overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%,0.6);
+}
+.nftc-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.01rem; /*This micro-adjustment to fit design legitimately feels like purposeful annoyance for the sake of selling premium subscriptions for access to figma files lol I'm not buying lil bro I'll keep measuring in GIMP*/
+  color: white;
+  margin-bottom: 0.66rem;
+}
+.nft-card p {
+  color: var(--softBlue);
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.nftc-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.66rem;
+}
+.nftc-stats {
+  display: flex;
+  justify-content: space-between;
+}
+.nftc-value-container, .nftc-timeleft-container {
+  display: flex;
+  align-items: center;
+}
+.nftc-cc-icon, .nftc-cl-icon {
+  margin-right: 0.33rem;
+}
+.nftc-value, .nftc-timeleft {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.nftc-value {
+  color: var(--cyan);
+}
+.nftc-timeleft {
+  color: var(--softBlue);
+}
+.nftc-accreditation {
+  display: flex;
+  align-items: center;
+  margin-top: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cardLine);
+  font-size: 0.9rem;
+}
+.nftc-avatar {
+  width: 1.83rem;
+  height: 1.83rem;
+  border: 1px solid white;
+  border-radius: 999rem;
+  margin-right: 0.9rem;
+}
+.nftc-avatar:hover {
+  border-color: var(--cyan);
+}
+.nftc-author {
+  letter-spacing: -0.02rem;
+}
+.nftc-author a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--cyan);
+}
+
+@media only screen and (min-width: 480px) {
+  main {
+    max-width: 400px;
+  }
+  .nftc-vis {
+    margin-bottom: 1.25rem;
+  }
+  .nftc-title {
+    margin-bottom: 1rem;
+  }
+  .nftc-desc {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .nftc-stats {
+    letter-spacing: 0.02rem;
+  }
+  .nftc-accreditation {
+    margin-top: 1.25rem;
+  }
+}

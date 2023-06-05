@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">;
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body>
+  <main>
+    <article class="nft-card">
+      <a href="https://i.imgur.com/s59rsiB.jpg" target="_blank">
+        <div class="nftc-vis">
+          <div class="nftc-vis-overlay">
+            <img src="./images/icon-view.svg">
+          </div>
+        </div>
+      </a>
+      <!--I would usually make this H2 or lower if this was part of a bigger page, especially if it was a list of multiple NFT cards-->
+      <h1 class="nftc-title"><a href="https://i.imgur.com/s59rsiB.jpg" target="_blank">Equilibrium #3429</a></h1>
+      <p class="nftc-desc">Our Equilibrium collection promotes balance and calm.</p>
+      <!--Don't need explicit descriptors of icons as their context is already explained in the following spans-->
+      <div class="nftc-stats">
+        <div class="nftc-value-container">
+          <img class="nftc-cc-icon" src="./images/icon-ethereum.svg" alt=""> 
+          <span class="nftc-value">0.041 ETH</span>
+        </div>
+        <div class="nftc-timeleft-container">
+          <img class="nftc-cl-icon" src="./images/icon-clock.svg" alt="">
+          <span class="nftc-timeleft">3 days left</span>
+        </div>
+      </div>
+      <div class="nftc-accreditation">
+        <a href="#"><img class="nftc-avatar" src="./images/image-avatar.png" alt="Author Avatar"></a>
+        <p class="nftc-author">Creation of <a href="#">Jules Wyvern</a></p>
+      </div>
+    </article>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/MGSimard" target="_blank">MGSimard</a>.
+    </div>
+  </main>
+</body>
+</html>
