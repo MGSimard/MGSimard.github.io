@@ -1,0 +1,190 @@
+<!-- DATADRAGON VERSION: https://ddragon.leagueoflegends.com/api/versions.json -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <title>LoLCBL - Community Ban List</title>
+</head>
+<body>
+    <header>
+        <div class="header-texts">
+            <h1 class="beau-title ">LOLCBL</h1>
+            <p class="beau-sub-gold-dark">Community Ban List</p>
+        </div>
+        <div class="header-divider"></div>
+    </header>
+    <main class="container">
+<!-- Table Section -->
+        <section id="section-reports" class="row">
+<!-- News Table Area -->
+            <div class="col-md-4">
+                <table id="table-news" class="table align-middle">
+                    <thead class="spiegel-title"><tr><th scope="col">LoLCBL News</th></tr></thead>
+                    <tbody class="spiegel-text bold">
+                        <tr><td>News 1</td></tr>
+                        <tr><td>News 2</td></tr>
+                        <tr><td>News 3</td></tr>
+                        <tr><td>News 4</td></tr>
+                        <tr><td>News 5</td></tr>
+                        <tr><td>News 6</td></tr>
+                        <tr><td>News 7</td></tr>
+                        <tr><td>News 8</td></tr>
+                    </tbody>
+                </table>
+            </div>
+<!-- Report Tables -->
+            <div id="report-tables" class="col-md-4 d-flex flex-column justify-content-between">
+                <table id="table-mostreports" class="table text-truncate">
+                    <thead class="spiegel-title"><tr>
+                        <th scope="col" class="w85">Most Reports</th>
+                        <th scope="col" class="w15 text-center"><i class="fa-solid fa-globe"></i></th>
+                    </tr></thead>
+                    <tbody class="spiegel-text">
+                        <tr><td class="text-truncate bold">SummonerName 1</td><td class="text-center">NA</td></tr>
+                        <tr><td class="text-truncate bold">SummonerName 2</td><td class="text-center">EU</td></tr>
+                        <tr><td class="text-truncate bold">SummonerName 3</td><td class="text-center">BR</td></tr>
+                    </tbody>
+                </table>
+                <table id="table-latestreports" class="table text-truncate">
+                    <thead class="spiegel-title"><tr>
+                        <th scope="col" class="w85">Latest Reports</th>
+                        <th scope="col" class="w15 text-center"><i class="fa-solid fa-globe"></i></th>
+                    </tr></thead>
+                    <tbody class="spiegel-text">
+                        <tr><td class="text-truncate bold">SummonerName 1</td><td class="text-center">KR</td></tr>
+                        <tr><td class="text-truncate bold">SummonerName 2</td><td class="text-center">OCE</td></tr>
+                        <tr><td class="text-truncate bold">SummonerName 3</td><td class="text-center">NA</td></tr>
+                    </tbody>
+                </table>
+            </div>
+<!-- Buttons Area -->
+            <div class="col-md-4 order-md-1 order-first marginthing">
+                <div id="report-buttons" class="d-grid gap-2">
+                    <a type="button" class="btn btn-dark btn-lg a-button" href="./summoner.html">Search Summoner</a>
+                    <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#reportModal">File Report</button>
+<!-- Report Modal -->
+                    <div class="modal fade" id="reportModal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <form action="report.php" method="POST" class="report-form">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title beau-heading-small">REPORT SUMMONER</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body spiegel-title">
+                                        <div class="input-group mb-5">
+                                            <fieldset class="col-8">
+                                                <label for="report-inputSummoner" class="form-label">Summoner Name<span style="color: red">*</span></label>
+                                                <input type="text" id="report-inputSummoner" class="form-control form-control-lg bg-dark" name="form-sumNAME" required>
+                                            </fieldset>
+                                            <fieldset class="col-4">
+                                                <label for="report-inputRegion" class="form-label">Region<span style="color: red">*</span></label>
+                                                <select id="report-inputRegion" class="form-select form-select-lg bg-dark" name="form-sumREGION" required>
+                                                    <option value="" selected disabled>. . .</option>
+                                                    <option value="NA1">North America</option>
+                                                    <option value="EUW1">Europe West</option>
+                                                    <option value="EUN1">Europe Nordic &amp; East</option>
+                                                    <option value="KR">Korea</option>
+                                                    <option value="JP1">Japan</option>
+                                                    <option value="OC1">Oceania</option>
+                                                    <option value="BR1">Brazil</option>
+                                                    <option value="LA1">LAN</option>
+                                                    <option value="LA2">LAS</option>
+                                                    <option value="RU">Russia</option>
+                                                    <option value="TR1">Turkey</option>
+                                                    <option value="SG2">Singapore</option>
+                                                    <option value="PH2">Phillippines</option>
+                                                    <option value="TW2">Taiwan</option>
+                                                    <option value="VN2">Vietnam</option>
+                                                    <option value="TH2">Thailand</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <fieldset class="mb-5">
+                                            <label for="report-addInfo">Additional Information<span style="color: red">*</span></label>
+                                            <textarea type="text" id="report-addInfo" class="form-control bg-dark" rows="4" required></textarea>                                      
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="report-inputFile" class="form-label">File Attachment</label>
+                                            <input type="file" id="report-inputFile" class="form-control form-control-lg bg-dark" aria-describedby="report-file-desc" name="form-FILES" accept="image/*" multiple>
+                                            <div id="report-file-desc" class="form-text spiegel-label">Images only, multiple files supported.</div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-between">
+                                        <div class=""><a href="./guidelines-&-faq.html">View Guidelines</a></div>
+                                        <div class="">
+                                            <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">CANCEL</button>
+                                            <button type="button" class="btn btn-primary btn-lg bold">SUBMIT REPORT</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+<!-- End Modal -->
+                </div>
+            </div>
+        </section>
+        <!-- <h1 class="beau-title">title test</h1>
+        <h2 class="beau-heading">heading test</h2>
+        <h3 class="beau-heading-small">heading small test</h3>
+        <h6 class="beau-sub-gold-dark">Sub Gold Dark</h6>
+        <h6 class="beau-sub-gold-light">Sub Gold Light</h6>
+        <h6 class="spiegel-title">Spiegel Title</h6>
+        <p class="spiegel-text">Spiegel Text</p>
+        <p class="spiegel-label">Spiegel Label</p> -->
+    </main>
+<!-- Footer -->
+    <footer class="container">
+        <section class="row">
+            <div class="col-md-3 link-block">
+                <h6 class="beau-sub-gold-light">LoLCBL</h6>
+                <ul>
+                    <li><a href="./guidelines-&-faq.html">Guidelines &amp; FAQ</a></li>
+                    <li><a href="">Something here</a></li>
+                    <li><a href="https://www.reddit.com/r/LoLCBL/" target="_blank">LoLCBL Subreddit</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 link-block">
+                <h6 class="beau-sub-gold-light">Community Links</h6>
+                <ul>
+                    <li><a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" target="_blank">League of Legends Esports Wiki</a></li>
+                    <li><a href="https://discord.com/invite/lol" target="_blank">LoL Discord Server</a></li>
+                    <li><a href="https://reddit.com/r/leagueoflegends/" target="_blank">LoL Subreddit</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 link-block">
+                <h6 class="beau-sub-gold-light">Official Resources</h6>
+                <ul>
+                    <li><a href="https://na.leagueoflegends.com/en/featured/summoners-code" target="_blank">Summoner's Code</a></li>
+                    <li><a href="https://www.leagueoflegends.com/en-us/event/league-of-legends-code-of-conduct/" target="_blank">Code of Conduct</a></li>
+                    <li><a href="https://support-leagueoflegends.riotgames.com/hc/en-us" target="_blank">League of Legends Support</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 link-block logo-block">
+                <img src="./src/media/SumLogo.svg" class="SumLogo" alt="LoLCBL Logo"><!-- Made some random logo in illustrator -->
+            </div>
+        </section>
+        <hr class="border border-dark-subtle">
+        <section class="row text-muted lh-1">
+            <div class="col-md-10 mb-5">
+                <small>Copyright © 2023 LoLCBL. LoLCBL isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</small></div>
+            <div class="col-md-2 text-md-end mb-5">
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/MGSimard" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mgsimard" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </footer>
+    <!-- jQuery, Popper.js & Bootstrap.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<!-- End Scripts -->
+</body>
+</html>

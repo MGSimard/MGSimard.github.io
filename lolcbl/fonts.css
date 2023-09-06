@@ -1,0 +1,241 @@
+/* Defining each font style twice to allow calling static and dynamic*/
+/* BEAUFORT FONT */
+/* Beaufort for LoL */ 
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold.woff2) format("WOFF2");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-Bold";
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Bold Italic */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold-italic.woff2) format("WOFF2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-BoldItalic";
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-bold-italic.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Heavy */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy.woff2) format("WOFF2");
+    font-weight: 800;
+    font-style: normal; 
+}
+
+@font-face {
+  font-family: "BeaufortForLOL-Heavy";
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Heavy Italic */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy-italic.woff2) format("WOFF2");
+    font-weight: 800;
+    font-style: italic; }
+
+@font-face {
+  font-family: "BeaufortForLOL-HeavyItalic";
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-heavy-italic.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Italic */
+@font-face {
+  font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-italic.woff2) format("WOFF2");
+  font-weight: 400;
+  font-style: italic; 
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-Italic";
+    src: url(./src/fonts/BeaufortForLoL/BFL-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-italic.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Light */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-light.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-light.woff2) format("WOFF2");
+    font-weight: 200;
+    font-style: normal; 
+}
+
+@font-face {
+  font-family: "BeaufortForLOL-Light";
+    src: url(./src/fonts/BeaufortForLoL/BFL-light.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-light.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Light Italic */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-light-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-light-italic.woff2) format("WOFF2");
+    font-weight: 200;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-LightItalic";
+    src: url(./src/fonts/BeaufortForLoL/BFL-light-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-light-italic.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Medium */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium.woff2) format("WOFF2");
+    font-weight: 500;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-Medium";
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Medium Italic */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium-italic.woff2) format("WOFF2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "BeaufortForLOL-MediumItalic";
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium-italic.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-medium-italic.woff2) format("WOFF2");
+}
+
+/* Beaufort for LOL Regular */
+@font-face {
+    font-family: "BeaufortForLOL";
+    src: url(./src/fonts/BeaufortForLoL/BFL-regular.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-regular.woff2) format("WOFF2");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+@font-face {
+  font-family: "BeaufortForLOL-Regular";
+    src: url(./src/fonts/BeaufortForLoL/BFL-regular.woff2);
+    src: url(./src/fonts/BeaufortForLoL/BFL-regular.woff2) format("WOFF2");
+}
+
+/* SPIEGEL */
+/* Spiegel Bold */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-bold.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-bold.woff2) format("WOFF2");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "Spiegel-Bold";
+    src: url(./src/fonts/Spiegel/spiegel-bold.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-bold.woff2) format("WOFF2");
+}
+
+/* Spiegel Bold Italic */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-bold-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-bold-italic.woff2) format("WOFF2");
+    font-weight: 700;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: "Spiegel-BoldItalic";
+    src: url(./src/fonts/Spiegel/spiegel-bold-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-bold-italic.woff2) format("WOFF2");
+}
+
+/* Spiegel Regular */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-regular.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-regular.woff2) format("WOFF2");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "Spiegel-Regular";
+    src: url(./src/fonts/Spiegel/spiegel-regular.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-regular.woff2) format("WOFF2");
+}
+
+/* Spiegel Regular Italic */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-regular-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-regular-italic.woff2) format("WOFF2");
+    font-weight: 400;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: "Spiegel-RegularItalic";
+    src: url(./src/fonts/Spiegel/spiegel-regular-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-regular-italic.woff2) format("WOFF2");
+}
+
+/* Spiegel SemiBold */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-semibold.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-semibold.woff2) format("WOFF2");
+    font-weight: 600;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "Spiegel-SemiBold";
+    src: url(./src/fonts/Spiegel/spiegel-semibold.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-semibold.woff2) format("WOFF2");
+}
+
+/* Spiegel SemiBold Italic */
+@font-face {
+    font-family: "Spiegel";
+    src: url(./src/fonts/Spiegel/spiegel-semibold-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-semibold-italic.woff2) format("WOFF2");
+    font-weight: 600;
+    font-style: italic; 
+}
+
+@font-face {
+  font-family: "Spiegel-SemiBoldItalic";
+    src: url(./src/fonts/Spiegel/spiegel-semibold-italic.woff2);
+    src: url(./src/fonts/Spiegel/spiegel-semibold-italic.woff2) format("WOFF2");
+}
