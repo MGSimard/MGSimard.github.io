@@ -10,6 +10,9 @@ h3, h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+article:not(.keep) .detail-shot {
+  display: none;
+}
 .project-sub {
   margin-bottom: 2rem;
 }
