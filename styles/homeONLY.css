@@ -29,13 +29,16 @@ a i:hover {
 
 @media only screen and (max-width: 960px) {
   h1 {
-    font-size: 6rem;
-    line-height: 4.5rem;
-    border-bottom: 0.6rem solid red;
+    font-size: 14.6vw;
+    line-height: 10.4vw;
+    border-bottom: 1.7vw solid red;
+  }
+  i {
+    font-size: 6.2vw;
   }
 }
 
-@media only screen and (max-width: 540px) {
+/*@media only screen and (max-width: 540px) {
   h1 {
     font-size: 3rem;
     line-height: 2.3rem;
@@ -44,4 +47,4 @@ a i:hover {
   i {
     font-size: 2.5rem;
   }
-}
+}*/

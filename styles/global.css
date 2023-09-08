@@ -25,6 +25,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  background-position: center center;
 }
 h1, h2, h3, h4 {color: white;}
 h2 {font-size:3.2rem;}
@@ -32,6 +33,7 @@ h4 {font-weight: 400;}
 p {color: var(--clrParagraph);}
 a {text-decoration: none;}
 p a {color: var(--clrAccent);text-decoration: underline;}
+button {outline: none;}
 .active {font-size: 1.7rem; color: var(--clrAccent)!important;}/*Prevent hover bypass*/
 .dashes {font-weight: 400;color: var(--clrAccent);}
 .no-highlight {-webkit-user-select: none;-ms-user-select: none;user-select: none;}
@@ -121,28 +123,23 @@ main .top {
 
 
 @media only screen and (max-width: 1200px) {
+  .page-title {
+    font-size: 9.2vw;
+  }
+}
+
+@media only screen and (max-width: 960px) {
   body { /* apparently bg not loading on mobile is fixed if use 1400px */
-    background: url(/rss/bgsmallerlol.webp), var(--clrBackground);
+    background: url(/rss/bgmobile.webp), var(--clrBackground);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
   }
-  .page-title {
-    font-size: 4.4rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .page-title {
-    font-size: 4rem;
-  }
   h2 {
-    font-size: 2.4rem;
+    font-size: 6.6vw;
   }
-  h3 {
-    font-size: 1rem;
-  }
+  /* h3 & h4 specifics in respective stylesheets (leveldesignONLY etc) */
   main {
     margin: 0;
   }
@@ -191,9 +188,6 @@ main .top {
 }
 
 @media only screen and (max-width: 534px) {
-  .page-title {
-    font-size: 3rem;
-  }
   header {
     width: 70vw;
     padding: 2rem 12vw;
