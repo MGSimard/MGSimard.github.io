@@ -22,10 +22,12 @@ html {
 }
 body {
   background: url(/rss/bg.webp) no-repeat, var(--clrBackground);
+  background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-position: center center;
+  -o-background-size: cover;
 }
 h1, h2, h3, h4 {color: white;}
 h2 {font-size:3.2rem;}
@@ -130,11 +132,12 @@ main .top {
 
 @media only screen and (max-width: 960px) {
   body { /* apparently bg not loading on mobile is fixed if use 1400px */
-    background: url(/rss/bgmobile.webp), var(--clrBackground);
-    background-repeat: no-repeat;
+    background: url(/rss/bgmobile.webp) 100% 100% no-repeat, var(--clrBackground);
+    background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -o-background-size: cover;
   }
   h2 {
     font-size: 6.6vw;
