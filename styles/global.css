@@ -23,6 +23,8 @@ html {
 body {
   background: url(/rss/bg.webp) no-repeat, var(--clrBackground);
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 h1, h2, h3, h4 {color: white;}
 h2 {font-size:3.2rem;}
@@ -118,7 +120,13 @@ main .top {
 
 
 
-@media only screen and (max-width: 1182px) {
+@media only screen and (max-width: 1200px) {
+  body { /* apparently bg not loading on mobile is fixed if use 1400px */
+    background: url(/rss/bgsmallerlol.webp) no-repeat, var(--clrBackground);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
   .page-title {
     font-size: 4.4rem;
   }
