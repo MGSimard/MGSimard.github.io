@@ -122,7 +122,8 @@ main .top {
 
 @media only screen and (max-width: 1200px) {
   body { /* apparently bg not loading on mobile is fixed if use 1400px */
-    background: url(/rss/bgsmallerlol.webp) no-repeat, var(--clrBackground);
+    background: url(/rss/bgsmallerlol.webp), var(--clrBackground);
+    background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -202,6 +203,9 @@ main .top {
   }
   header ul {
     font-size: 5.5vw;
+  }
+  header a:hover {
+    font-size: 6.4vw; 
   }
   .active {
     font-size: 6.4vw;
