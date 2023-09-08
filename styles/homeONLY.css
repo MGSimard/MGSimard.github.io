@@ -26,3 +26,22 @@ a i:hover {
   transform: scale(1.1);
   color: var(--clrHover);
 }
+
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 4.5rem;
+    border-bottom: 0.6rem solid red;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 2.3rem;
+    border-bottom: 0.35rem solid red;
+  }
+  i {
+    font-size: 2.5rem;
+  }
+}
