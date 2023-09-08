@@ -185,4 +185,17 @@ main .top {
   .page-title {
     font-size: 3rem;
   }
+  header {
+    width: 70vw;
+    padding: 2rem 12vw;
+  }
+  header .logo {
+    font-size: 18vw;
+  }
+  header ul {
+    font-size: 5.5vw;
+  }
+  .active {
+    font-size: 6.4vw;
+  }
 }
