@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background: url("https://i.imgur.com/ac9Thos.png");
+  background: url("./bg.webp");
   background-color: #000000;
   background-size: cover;
   font-family: Oswald, system-ui;
