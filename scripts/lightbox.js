@@ -67,6 +67,8 @@ function arrowEvent() {
     document.getElementById("lb-slide-previous").click();
   } else if (event.key == "ArrowRight") {
     document.getElementById("lb-slide-next").click();
+  } else if (event.key == "Escape") {
+    lightboxOff();
   }
 }
 
