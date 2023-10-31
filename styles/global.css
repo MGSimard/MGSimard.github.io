@@ -199,6 +199,7 @@ main .top {
   height: auto;
   cursor: pointer;
   border-radius: 0.3rem;
+  transition: all 0.2s ease;
 }
 .hero-shot:hover, .detail-shot:hover {
   border-radius: 0;

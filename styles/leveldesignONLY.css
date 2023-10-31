@@ -2,8 +2,27 @@ h3, h4 {
   font-size:2.4rem;
 }
 
-.hero-shot, .context {
+.hero-container, .context {
   grid-column-end: span 2;
+}
+.hero-shot:hover ~ .popout {
+  color: hsl(0, 100%, 64%);
+  opacity: 0.6;
+}
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+.popout {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: white;
+  font-size: 2rem;
+  opacity: 0.2;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  text-shadow: -5px 5px 4px black;
 }
 .article-content {
   display: grid;
@@ -134,7 +153,7 @@ article:not(.keep) .detail-shot {
 }
 
 @media only screen and (max-width: 1200px) {
-  .hero-shot, .context {
+  .hero-container, .context {
     grid-column-end: span 4;
   }
 }
