@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+}
+html, body {
+  min-height: 100vh;
+  height: 100%;
+}
+html {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif; /* Weight 400 & 700 */
+}
+body {
+  background-color: var(--darkCyan);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 45vh, left 50vw top 45vh;
+  background-repeat: no-repeat;
+}
+.attribution {margin-top: 1rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/**/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1.38rem;
+}
+.profile-card {
+  width: 18rem;
+  border-radius: 0.9rem;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+.pc-head {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 7.77rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pc-picture {
+  position: absolute;
+  bottom: -3rem;
+  border-radius: 999rem;
+  border: 5px solid white;
+}
+.pc-content {
+  margin-top: 4rem;
+}
+.pc-name, .pc-stat h3 {
+  color: var(--veryDarkBlue);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.pc-age, .pc-subtext, .pc-loc {
+  color: var(--darkGrayishBlue);
+}
+.pc-age {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.pc-loc {
+  margin-top: 0.5rem;
+  margin-bottom: 1.33rem;
+  font-size: 0.77rem;
+  font-weight: 400;
+}
+.pc-stats-container {
+  display: flex;
+  padding: 1.33rem 1.5rem;
+  border-top: 1px solid #ddd;
+}
+.pc-stat {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.pc-subtext {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+}
+
+@media only screen and (min-width: 968px) {
+  .profile-card {
+    width: 19.44rem;
+  }
+}
