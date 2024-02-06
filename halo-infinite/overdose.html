@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MGSimard - Overdose</title>
+  <meta name="description" content="A hobbyist artist and designer's creative world. Dive into a diverse showcase of stunning visuals and exciting projects. Join the journey and witness the growth and learning process of these imaginative works by MGSimard.">
+  <link rel="stylesheet" type="text/css" href="../styles/global.css">
+  <link rel="icon" href="../rss/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+<div id="preloader">
+  <div class='preloader'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+  
+<nav id="mobile-nav">
+  <div id="burger-wrapper">
+    <a href="../home.html">
+      <div id="burger-title">
+        <img id="nav-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
+        <span>MGSimard</span>
+      </div>
+    </a>
+    <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <ul id="mobile-navlinks" class="navlinks">
+    <li class="navlink mLink" hidden><a href="../home.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+    <li class="navlink mLink" hidden><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
+    <li class="navlink mLink" hidden><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
+  </ul>
+</nav>
+
+<nav id="desktop-nav">
+  <div id="profile-section">
+    <div id="profile-identifiers">
+      <div id="profile-icon-container">
+        <img id="profile-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
+      </div>
+      <div>
+        <h4 id="profile-name">MGSimard</h4>
+        <span id="profile-tagline">Multidisciplinary Hobbyist</span>
+      </div>
+    </div>
+    <div id="profile-info-container">
+      <div id="profile-info">
+        <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Wonderland, Canada</span>
+        <span class="profile-point"><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span>
+      </div>
+      <a href="mailto:g.marcgs@gmail.com" target="_top">
+        <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
+      </a>      
+    </div>
+    <div id="profile-bio">
+      <p>Hobbyist Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a "Mapper".</p>
+      <br>
+      <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
+    </div>
+  </div>
+  <ul class="navlinks">
+    <li class="navlink"><a href="../home.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+    <li class="navlink"><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
+    <li class="navlink"><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
+  </ul>
+</nav>
+  
+<header>
+  <h1 id="page-title"><span>LEVEL DESIGN //</span> OVERDOSE</h1>
+  <div class="header-divider"></div>
+</header>
+	
+<main>
+  <section>
+    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Overdose</span>
+    <h2 class="section-title">Overdose</h2>
+    <div class="section-grid g1-2x gm1 gallery">
+      <img src="../rss/leveldesign/haloinfinite/overdose/depot.webp">
+      <div>
+        <ul>
+          <li><strong>Platform:</strong>Halo Infinite Forge</li>
+          <li><strong>Genre:</strong>FPS, Zombie Survival</li>
+          <li><strong>Solo Project</strong></li>
+        </ul>
+        <br>
+        <p>Overdose is a recreation of <a href="https://combatarms.fandom.com/wiki/Overdose" target="_blank">Combat Arms' original map</a>, using Halo Infinite's UGC tool, "Forge". The level was entirely built using primitive shapes &amp; Halo Infinite's stock assets over the course of a month (~300 hours). References for the project were numerous different Youtube videos showcasing gameplay of the map (Unlike Junk Flea, where a more precise and complex process was used—explained in more detail within its own section below).</p>
+        <br>
+        <p>For this specific level, a collection of scripts were "coded" using Forge's built-in node scripting system called Script Brain. Examples of the developed systems can be found further below in the article. <!--A video showcasing these systems in action can be found here.--></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Gameplay</h2>
+    <div class="section-grid g2-1x gm1 gallery">
+      <div>
+        <p>Supported by the scripts shown in in the scripting section, the basis of this map + game mode combo is for Survivors to outlive the infected. They can accomplish this objective either by surviving until the round's end, or by exterminating all of the infected. The infected are chosen at random at the start of every round, and those Alpha infected eventually "turn" after a short grace period. Unlike Vanilla Halo infection where infection forces a respawn, I've scripted a system which dynamically infects players where they stand to simulate Combat Arms' Quarantine mode. This instills paranoia and lack of trust in each player during pre-round, while also groups to split evenly throughout the map until the infected are turned.</p>
+        <br>
+        <p>The map contains defensible areas, several hiding spots and obstacles which the survivors can utilize in order to get away from the infected, or even set up traps. Once there is 70 seconds left to the round, a 10 second alert rings which then leads to saferooms unlocking. If survivors can manage to reach those rooms, they can be locked from within to aid in surviving the last minute of the round. If enough infected are still standing, fortifications can be broken through with relative ease - so it's a decent idea to ensure that you have enough explosives saved for them.</p>
+      </div>
+      <img class="gswap" src="../rss/leveldesign/haloinfinite/overdose/hallway.webp">
+    </div>
+  </section>
+  
+  <section>
+    <h2 class="section-title">Gallery</h2>
+    <div class="section-grid g6x gallery">
+      <img src="../rss/leveldesign/haloinfinite/overdose/depot.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/main.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/main2.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/dropdown.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/hallway.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/lab.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/gate.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/barricade.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/control.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/tunnel.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/vents.webp">
+      <img src="../rss/leveldesign/haloinfinite/overdose/security.webp">
+    </div>
+  </section>
+  
+  <section>
+    <h2 class="section-title">Scripting</h2>
+    <div class="section-grid g2-1x gm1">
+      <div>
+        <p>Halo Infinite's Forge mode includes a node scripting tool called "Script Brain". It consists of various event listeners, triggers, variables and tons of other settings. For Overdose specifically, many systems were scripted to emulate the gameplay experience found in Combat Arm's Quarantine game mode.</p>
+        <br>
+        <p>Unfortunately as contextual player damage events were and still aren't available in Forge, it was impossible to create a bullet knockback effect due to being unable to get the aggressor's aiming vector to control the knockback direction. Instead, a health-polling script was written in order to slow down zombies when their health had changed between ticks (damaged). The same method was utilized for zombification in order to produce an "in-place" zombification system, not requiring the killing and respawning of a human player to turn them into a zombie. This however had the unfortunate side-effect of turning off self-damage from sources such as grenades, or even environmental hazards like nerve gas in the ventilation systems meant to discourage highly advantageous camping spots -- though it is less of an issue due to bullets not knocking back in this version thus not resulting in an endless standoff in the vents with humans cycling "shifts" while others reload.</p>
+        <br>
+        <p>This however still meant that this version of the map was one which did not fall completely in line with my intended vision of the game mode, thus a final version is still in progress until 343 includes an "On Player Damaged" event node in their Forge development kit. If and when one is included, most of the scripting for the level would be reworked to function with said new and better system.</p>
+      </div>
+      <div class="section-grid g2x gswap gallery">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_defaults.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_traits.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_saferoom.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_slow.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_count.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_infection.webp">
+        <img src="../rss/leveldesign/haloinfinite/overdose/script_attribution.webp">
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Overdose</span>
+  </section>
+  
+  <div id="lightbox" class="nodisplay">
+    <button id="lb-close"><i class="fa-solid fa-xmark"></i></button>
+    <div id="lb-img-container">
+      <img id="lightbox-img" src="">
+      <div class="nodisplay" id="lb-arrows-container">
+        <button id="lb-previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="lb-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</main>
+	
+<footer>
+  <small>© <script>document.write(new Date().getFullYear())</script> MGSimard. All Rights Reserved.</small>
+</footer>
+	
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="../scripts/script.js"></script>
+<script src="../scripts/preload.js"></script>
+<script src="../scripts/lightbox.js"></script>
+</body>
+</html>
