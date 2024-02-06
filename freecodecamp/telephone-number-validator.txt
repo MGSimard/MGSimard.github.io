@@ -1,0 +1,26 @@
+function telephoneCheck(str) {
+  const regex = new RegExp(/^1?([-\s]?)(?:\d{3}|\(\d{3}\))([-\s]?)\d{3}([-\s]?)\d{4}$/g);
+  return regex.test(str);
+}
+
+telephoneCheck("555-555-5555");
+
+//Rules
+//10-11 Digits (10 without country code, 11 with -- country code must be 1)
+//Must contain 3 digit area code
+//If includes parenthesis, must contain matching pair and in valid position
+//Only space, hyphen or parentheses can separate in valid position
+//Regex solution: start with 1 or nothing, hyphen/space or nothing, 3 numbers with or without parenthesis, hyphen/space or nothing, 3 numbers, hyphen/space or nothing, 4 numbers, break
+
+//Valid formats:
+//(555)555-5555
+//555-555-5555
+//555 555 5555
+//5555555555
+//1 (555) 555-5555
+//1(555)555-5555
+//1 555-555-5555
+//1 555 555 5555
+//15555555555
+
+//==MGSIMARD==

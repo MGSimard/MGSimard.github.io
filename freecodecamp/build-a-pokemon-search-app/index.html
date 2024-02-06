@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang=en_us>
+<head>
+  <meta charset="UTF-8">
+  <title>MGSimard's Pokémon Search App</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Pokémon Search App">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <h1>Pokémon Search App</h1>
+  </header>
+  <main>
+    <section>
+      <div class="data">
+      <form id="search-form" role="search">
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input type="text" id="search-input" name="pokemon" placeholder="Name or ID..." required>
+        <button id="search-button">
+          <i class='bx bx-caret-right'></i>
+        </button>
+      </form>
+      <div class="info">
+        <span id="pokemon-name"></span>
+        <span id="pokemon-id"></span>
+      </div>
+      <div class="size">
+        <p>Weight: <span id="weight"></span></p>
+          <p>Height: <span id="height"></span></p>
+      </div>
+      </div>
+      <div id="sprite-container"></div>
+      <div id="types"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Base</th>
+            <th>Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HP:</td>
+            <td id="hp"></td>
+          </tr>
+          <tr>
+            <td>Attack:</td>
+            <td id="attack"></td>
+          </tr>
+          <tr>
+            <td>Defense:</td>
+            <td id="defense"></td>
+          </tr>
+          <tr>
+            <td>Sp. Attack</td>
+            <td id="special-attack"></td>
+          </tr>
+          <tr>
+            <td>Sp. Defense:</td>
+            <td id="special-defense"></td>
+          </tr>
+          <tr>
+            <td>Speed:</td>
+            <td id="speed"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer><a href="https://mgsimard.github.io/" target="_blank">MGSimard</a></footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
