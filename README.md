@@ -1,2 +1,2 @@
-# Front-End Development Projects
-## - MGSimard -
+# MGSimard's Portfolio
+## Web Development & Level Design
