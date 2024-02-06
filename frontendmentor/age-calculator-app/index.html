@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="age-app">
+      <div class="form-wrapper">
+        <form id="form-birthday">
+          <fieldset class="date-input-group">
+            <label for="input-day">
+              DAY
+              <input type="number" id="input-day" name="input-day" placeholder="DD">
+              <span class="input-error">This field is required</span>
+            </label>
+            <label for="input-month">
+              MONTH
+              <input type="number" id="input-month" name="input-month" placeholder="MM">
+              <span class="input-error">Error</span>
+            </label>
+            <label for="input-year">
+              YEAR
+              <input type="number" id="input-year" name="input-year" placeholder="YYYY">
+              <span class="input-error">Error</span>
+            </label>
+          </fieldset>
+          <label class="submit-button">
+            <input type="submit" id="input-submit" value="Submit">
+            <img src="./assets/images/icon-arrow.svg" alt="Submit">
+          </label>
+        </form>
+      </div>
+      <div class="result-wrapper">
+        <div class="result" id="result-years">
+          <span class="result-num">- -</span>
+          <span class="result-txt">years</span>
+        </div>
+        <div class="result" id="result-months">
+          <span class="result-num">- -</span>
+          <span class="result-txt">months</span>
+        </div>
+        <div class="result" id="result-days">
+          <span class="result-num">- -</span>
+          <span class="result-txt">days</span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/MGSimard" target="_blank">MGSimard</a>.
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js" integrity="sha256-Nn+JGDrq3PuTxcDfJmmI0Srj5LpfOFlKqEiPwQK7y40=" crossorigin="anonymous"></script>
+  <script src="./scripts/main.js"></script>  
+</body>
+</html>
