@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+    <!--Attempting JS-less optional goal-->
+    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details-->
+    <main>
+        <div class="faq-container">
+            <div class="images-container half">
+                <img id="mobile-image" class="img-mbl" src="images/illustration-woman-online-mobile.svg">
+                <img id="mobile-shadow" class="img-mbl" src="images/bg-pattern-mobile.svg">
+                <img id="desktop-image" class="img-dsk" src="images/illustration-woman-online-desktop.svg">
+                <img id="desktop-shadow" class="img-dsk" src="./images/bg-pattern-desktop.svg">                
+            </div>
+            <div class="accordions half">
+                <h1>FAQ</h1>
+                <details>
+                    <summary>How many team members can I invite? <img src="images/icon-arrow-down.svg"></summary>
+                    <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+    team members for the Premium plan.</p>
+                </details>
+                <details>
+                    <summary>What is the maximum file upload size?<img src="images/icon-arrow-down.svg"></summary>
+                    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </details>
+                <details>
+                    <summary>How do I reset my password?<img src="images/icon-arrow-down.svg"></summary>
+                    <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+                </details>
+                <details>
+                    <summary>Can I cancel my subscription?<img src="images/icon-arrow-down.svg"></summary>
+                    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </details>
+                <details>
+                    <summary>Do you provide additional support?<img src="images/icon-arrow-down.svg"></summary>
+                    <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </details>
+                <!--Holy jank part 1-->
+                <img id="desktop-box" class="img-dsk" src="./images/illustration-box-desktop.svg">
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge"  target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/MGSimard" target="_blank">MGSimard</a>.
+        </div>
+    </main>    
+</body>
+</html>
