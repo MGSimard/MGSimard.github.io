@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <header>
+    <div class="nav-group ng1">
+      <button id="nav-button-burger" class="nav-button-burger"></button>
+      <a href="#" class="no-highlight"><img class="nav-logo" src="images/logo.svg" alt="Sneakers Logo"></a>
+      <div class="navlinks-desktop">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-group ng2">
+      <button id="nav-button-cart" class="nav-button-cart"><span id="cart-tag" class="cart-tag"></span></button>
+      <a href="#" class="no-highlight"><img class="nav-avatar" src="./images/image-avatar.png"></a>
+      <div id="cart-preview" class="cart-preview no-display">
+        <h2>Cart</h2>
+        <hr/>
+        <div id="cart-empty">Your cart is empty.</div>
+        <div id="cart-filled" class="no-display">
+          <div id="cart-items-section" class="cart-items-section"></div>
+          <button id="btn-checkout" class="confirm-cart">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div id="burger-expand" class="burger-expand no-display">
+      <div class="burger-content">
+        <button id="close-burger"><svg class="close-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg></button>
+          <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="product-showcase">
+      <div id="main-vitrine" class="image-container">
+        <div class="arrows-container">
+          <button id="arrow-previous" class="arrow" data-command="previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+          <button id="arrow-next" class="arrow" data-command="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="vitrine-thumbs" class="thumbs-container">
+        <div class="thumb-box active-box">
+          <img class="v-thumb active-img" src="images/image-product-1-thumbnail.jpg" alt="Fall Limited Edition Sneakers">
+        </div>
+        <div class="thumb-box">
+          <img class="v-thumb" src="images/image-product-2-thumbnail.jpg">
+        </div>
+        <div class="thumb-box">
+          <img class="v-thumb" src="images/image-product-3-thumbnail.jpg">
+        </div>
+        <div class="thumb-box">
+          <img class="v-thumb" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- LIGHTBOX CONTAINER -->
+    <div id="product-lightbox" class="no-display">
+      <div class="lightbox-content">
+        <div id="lightbox-close"><svg class="close-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg></div>
+        <div id="lb-main-vitrine" class="image-container">
+          <div class="lb-arrows-container">
+            <button id="lb-arrow-previous" class="arrow" data-command="previous">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+            <button id="lb-arrow-next" class="arrow" data-command="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </div>
+        </div>
+        <div id="lb-vitrine-thumbs" class="thumbs-container">
+          <div class="thumb-box active-box">
+            <img class="v-thumb active-img" src="images/image-product-1-thumbnail.jpg">
+          </div>
+          <div class="thumb-box">
+            <img class="v-thumb" src="images/image-product-2-thumbnail.jpg">
+          </div>
+          <div class="thumb-box">
+            <img class="v-thumb" src="images/image-product-3-thumbnail.jpg">
+          </div>
+          <div class="thumb-box">
+            <img class="v-thumb" src="images/image-product-4-thumbnail.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="main-content">
+      <h1>Sneaker Company</h1>
+      <h2 id="product-title">Fall Limited Edition Sneakers</h2>
+      <p id="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price-container">
+        <div class="pc-one">
+          <h3 id="product-price" class="price">$125.00</h3>
+          <span id="sale-percent" class="sale-percent">50%</span>
+        </div>
+        <span id="product-baseprice" class="price-before">$250.00</span>
+      </div>
+      <div class="quant-cart-flexer">
+        <div class="select-quantity-container">
+          <input id="select-quantity" class="select-quantity" type="number" value="1">
+          <div class="sa-buttons">
+            <button id="decrease" class="btn-adjust-quantity"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="4"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill-rule="nonzero" xlink:href="#a"/></svg></button>
+            <button id="increase" class="btn-adjust-quantity"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill-rule="nonzero" xlink:href="#b"/></svg></button>
+          </div>
+        </div>
+        <button id="add-to-cart" class="add-to-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </main>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/MGSimard" target="_blank">MGSimard</a>.
+  </div>
+  <script src="script.js"></script>
+  <!-- Not adding linebreak + tab after template tag because of adds text childNodes-->
+  <template id="cart-item-template"><div class="cart-item">
+      <div class="thumb-container">
+        <img src="images/image-product-1-thumbnail.jpg">
+      </div>
+      <div class="item-details">
+        <div class="item-name"></div>
+        <div class="item-values">
+          <span class="item-price"></span>
+          x
+          <span class="item-units"></span>
+          <span class="item-total"></span>
+        </div>
+      </div>
+      <button onclick="delFromCart()"><img src="./images/icon-delete.svg"></button>
+    </div></template>
+</body>
+</html>
