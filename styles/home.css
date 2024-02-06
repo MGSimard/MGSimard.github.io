@@ -1,0 +1,68 @@
+html, body {
+
+}
+body {
+  background: url(/rss/bg.webp) no-repeat, var(--clrBG);
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+#header-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: none!important;
+  height: 100dvh;
+}
+#header-home h1 {
+  font-size: 10rem;
+  border-bottom: 1rem solid hsl(0, 95%, 62%);
+  margin-bottom: 2rem;
+  /*text-shadow: 0 0 2px hsl(0, 95%, 62%);*/
+}
+#header-home ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+#header-home li a i{
+  transition: all 0.2s ease;
+  mix-blend-mode: color-burn;
+  opacity: 0.6;
+}
+#header-home li a i:hover {
+  mix-blend-mode: normal;
+  opacity: 1;
+  scale: 1.1;
+}
+#header-bio {
+  display: none;
+  color: hsl(0, 0%, 67%);
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding: 3.6rem;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #header-home-container {
+    width: 100%;
+  }
+  #header-home h1 {
+    font-size: 14vw;
+  }
+  #header-home ul {
+    font-size: 8vw;
+  }
+  #header-bio {
+    display: block;
+  }
+}
