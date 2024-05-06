@@ -50,6 +50,16 @@ body {
     color: var(--lolGrey1);
 }
 
+#alert {
+  background: red;
+
+  color: white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+}
+
 a {
     text-decoration: none;
     color: var(--lolGold2);
