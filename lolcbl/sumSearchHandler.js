@@ -16,7 +16,7 @@ const inputRegion = document.getElementById("SUMSEARCH-REGION");
 const inputSubmit = document.getElementById("SUMSEARCH-SUBMIT");
 
 //I HAVE NO IDEA HOW TO SECURE MY APIKEY SERVER-SIDE I DO FRONTEND LOL
-const apiKey = "RGAPI-24028a90-eba4-482d-826e-ad17146329b2";
+const apiKey = "RGAPI-ddc3814a-277f-493b-b65b-66403bc7fb7d";
 const keyURL = "?api_key=" + apiKey;
 
 //TRANSLATE ENTER KEY EVENT INTO A CLICK EVENT IN SUMMONER NAME FIELD
