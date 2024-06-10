@@ -43,8 +43,8 @@ body {
   height: 100%;
   padding: 3.2rem;
   background: var(--clrBGlight);
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.8); 
-  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.8); 
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.8);
   z-index: 100;
 }
 #mobile-nav {
@@ -295,6 +295,7 @@ strong {margin-right: 0.5rem;}
 }
 .profile-point i {
   margin-right: 1rem;
+  width: 1.5rem;
 }
 .profile-link {
   color: var(--clrPrimary);
