@@ -18,7 +18,7 @@ This V2 was coded purely in vanilla html/css/js using Adobe Brackets before pick
 
 ## Contact
 
-MGSimard - g.marcgs@gmail.com
+MGSimard - g.marcgs@gmail.com  
 [@MGSimard on X](https://x.com/MGSimard)
 
 For more info, view my portfolio at [mgsimard.github.io](https://mgsimard.github.io). Resume attached.
