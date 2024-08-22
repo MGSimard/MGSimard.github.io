@@ -1,517 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MGSimard - Web Development</title>
-  <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./rss/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./rss/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./rss/favicon-16x16.png">
-  <link rel="manifest" href="./rss/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="./styles/global.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MGSimard - Web Development</title>
+    <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio." />
+    <link rel="apple-touch-icon" sizes="180x180" href="./rss/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./rss/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./rss/favicon-16x16.png" />
+    <link rel="manifest" href="./rss/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  
-<div id="preloader">
-  <div class='preloader'>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-  
-<nav id="mobile-nav">
-  <div id="burger-wrapper">
-    <a href="./index.html">
-      <div id="burger-title">
-        <img id="nav-icon" alt="MGSimard Icon" src="./rss/avatar.jpg">
-        <span>MGSimard</span>
+  <body>
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </a>
-    <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
-  </div>
-  <ul id="mobile-navlinks" class="navlinks">
-    <li class="navlink mLink" hidden><a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink mLink active" hidden><a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink mLink" hidden><a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
+    </div>
 
-<nav id="desktop-nav">
-  <div id="profile-section">
-    <div id="profile-identifiers">
-      <div id="profile-icon-container">
+    <nav id="mobile-nav">
+      <div id="burger-wrapper">
         <a href="./index.html">
-          <img id="profile-icon" alt="MGSimard Icon" src="./rss/avatar.jpg">
+          <div id="burger-title">
+            <img id="nav-icon" alt="MGSimard Icon" src="./rss/avatar.jpg" />
+            <span>MGSimard</span>
+          </div>
         </a>
+        <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
       </div>
-      <div>
-        <h4 id="profile-name">MGSimard</h4>
-        <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
-      </div>
-    </div>
-    <div id="profile-info-container">
-      <div id="profile-info">
-        <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
-        <span class="profile-point"><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span>
-      </div>
-      <a href="mailto:g.marcgs@gmail.com" target="_top">
-        <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
-      </a>      
-    </div>
-    <div id="profile-bio">
-      <p><strong>Front-End Stack: HTML5/CSS3/JS (ES6+), TypeScript, React 18, Bootstrap, Wordpress, Divi.</strong></p>
-      <br>
-      <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
-      <br>
-      <p>Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a "Mapper".</p>      
-    </div>
-  </div>
-  <ul class="navlinks">
-    <li class="navlink"><a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink active"><a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink"><a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
-  
-<header id="header-web">
-  <h1 id="page-title"><span>WEB DEVELOPMENT</span></h1>
-  <div class="header-divider"></div>
-</header>
-	
-<main>
-  <section id="web-professional">
-    <h2 class="section-title">Professional</h2>
-    <div class="grid-container">
-      <a href="https://rogue.no/" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/thumb_rogue.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Rogue</h3>
-              <span class="project-detail">Wordpress, Divi</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="web-standalone">
-    <h2 class="section-title">Standalone</h2>
-    <div class="grid-container">
-      <a href="https://wuwatools.web.app/" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/thumb_wuwatools.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">WuwaTools</h3>
-              <span class="project-detail">React, TypeScript</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://leaguemh-react.web.app/" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/lolmh_thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">LOLMH-React</h3>
-              <span class="project-detail">React</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./lolcbl/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./lolcbl/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">LoLCBL</h3>
-              <span class="project-detail">Bootstrap</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/portfoliov2.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Portfolio V2</h3>
-              <span class="project-detail">Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./portfoliov1/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./portfoliov1/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Portfolio V1</h3>
-              <span class="project-detail">Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="web-frontendmentor">
-    <h2 class="section-title">Frontend Mentor <span class="viewall"><a href="https://www.frontendmentor.io/profile/MGSimard/solutions/" target="_blank">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></h2>
-    <div class="grid-container">
-      <a href="./frontendmentor/ecommerce-product-page/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/ecommerce-product-page/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Ecommerce Product Page</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/age-calculator-app/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/age-calculator-app/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Age Calculator App</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/newsletter-sign-up-with-success-message/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/newsletter-sign-up-with-success-message/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Newsletter Sign-Up Form</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/faq-accordion-card/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/faq-accordion-card/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">FAQ Accordion Card</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla, No-JS</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/interactive-rating-component/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/interactive-rating-component/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Interactive Rating Component</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/interactive-card-details-form/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/interactive-card-details-form/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Interactive Card Details Form</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla, imask.js</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/notifications-page/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/notifications-page/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Notifications Page</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/results-summary-component/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/results-summary-component/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Results Summary Component</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/profile-card-component/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/profile-card-component/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Profile Card Component</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/news-homepage/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/news-homepage/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">News Homepage</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/nft-preview-card-component/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/nft-preview-card-component/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">NFT Preview Card Component</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./frontendmentor/product-preview-card-component/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./frontendmentor/product-preview-card-component/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Product Preview Card Component</h3>
-              <span class="project-detail">Frontend Mentor, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="web-freecodecamp">
-    <h2 class="section-title">freeCodeCamp <span class="viewall"><a href="https://www.freecodecamp.org/MGSimard/" target="_blank">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></h2>
-    <div class="grid-container">
-      <a href="./freecodecamp/build-a-pokemon-search-app/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/build-a-pokemon-search-app/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Pokémon Search App</h3>
-              <span class="project-detail">freeCodecamp, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/OJBLBjd" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_games.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Video Game Sales</h3>
-              <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/QWZLwRP" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_cloropleth.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Cloropleth Map</h3>
-              <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/rNZXOer" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_heatmap.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Heat Map</h3>
-              <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>      
-      <a href="https://codepen.io/MGSimard/full/ExeMZbN" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_calculator.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Javascript calculator</h3>
-              <span class="project-detail">freeCodecamp, React</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/poOGqPP" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_markdown.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Markdown Previewer</h3>
-              <span class="project-detail">freeCodecamp, React</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/abaXyrx" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_quote.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Random Quote Machine</h3>
-              <span class="project-detail">freeCodecamp, React</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="https://codepen.io/MGSimard/full/PodgjXd" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_pomodoro.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Pomodoro Clock</h3>
-              <span class="project-detail">freeCodecamp, React</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./freecodecamp/personal-portfolio-page/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/personal-portfolio-page/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Personal Portfolio</h3>
-              <span class="project-detail">freeCodecamp, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./freecodecamp/survey-form/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/survey-form/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Sign-Up Form</h3>
-              <span class="project-detail">freeCodecamp, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./freecodecamp/technical-documentation-page/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/technical-documentation-page/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Documentation Page</h3>
-              <span class="project-detail">freeCodecamp, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./freecodecamp/tribute-page/index.html" target="_blank">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./freecodecamp/tribute-page/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Character Page</h3>
-              <span class="project-detail">freeCodecamp, Vanilla</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  
+      <ul id="mobile-navlinks" class="navlinks">
+        <li class="navlink mLink" hidden>
+          <a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink mLink active" hidden>
+          <a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-</main>
-	
-<footer>
-  <small>© <script>document.write(new Date().getFullYear())</script> MGSimard. All Rights Reserved.</small>
-</footer>
-	
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-<script src="./scripts/script.js"></script>
-<script src="./scripts/preload.js"></script>
-</body>
+    <nav id="desktop-nav">
+      <div id="profile-section">
+        <div id="profile-identifiers">
+          <div id="profile-icon-container">
+            <a href="./index.html">
+              <img id="profile-icon" alt="MGSimard Icon" src="./rss/avatar.jpg" />
+            </a>
+          </div>
+          <div>
+            <h4 id="profile-name">MGSimard</h4>
+            <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
+          </div>
+        </div>
+        <div id="profile-info-container">
+          <div id="profile-info">
+            <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
+            <span class="profile-point"
+              ><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span
+            >
+          </div>
+          <a href="mailto:g.marcgs@gmail.com" target="_top">
+            <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
+          </a>
+        </div>
+        <div id="profile-bio">
+          <p>
+            <strong
+              >Tech Stack: HTML5/CSS3/JS(ES6+), TypeScript, React 18, Next.js 15, Bootstrap, Wordpress, Divi,
+              PostgreSQL.</strong
+            >
+          </p>
+          <br />
+          <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
+          <br />
+          <p>
+            Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a
+            "Mapper".
+          </p>
+        </div>
+      </div>
+      <ul class="navlinks">
+        <li class="navlink">
+          <a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink active">
+          <a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink">
+          <a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header id="header-web">
+      <h1 id="page-title"><span>WEB DEVELOPMENT</span></h1>
+      <div class="header-divider"></div>
+    </header>
+
+    <main>
+      <section id="web-professional">
+        <h2 class="section-title">Professional</h2>
+        <div class="grid-container">
+          <a href="https://rogue.no/" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/thumb_rogue.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Rogue</h3>
+                  <span class="project-detail">Wordpress, Divi</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="web-standalone">
+        <h2 class="section-title">Standalone</h2>
+        <div class="grid-container">
+          <a href="https://wuwatools.web.app/" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/thumb_wuwatools.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">WuwaTools</h3>
+                  <span class="project-detail">React, TypeScript</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://leaguemh-react.web.app/" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/lolmh_thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">LOLMH-React</h3>
+                  <span class="project-detail">React</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./lolcbl/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./lolcbl/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">LoLCBL</h3>
+                  <span class="project-detail">Bootstrap</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/portfoliov2.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Portfolio V2</h3>
+                  <span class="project-detail">Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./portfoliov1/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./portfoliov1/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Portfolio V1</h3>
+                  <span class="project-detail">Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="web-frontendmentor">
+        <h2 class="section-title">
+          Frontend Mentor
+          <span class="viewall"
+            ><a href="https://www.frontendmentor.io/profile/MGSimard/solutions/" target="_blank"
+              >View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a
+          ></span>
+        </h2>
+        <div class="grid-container">
+          <a href="./frontendmentor/ecommerce-product-page/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/ecommerce-product-page/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Ecommerce Product Page</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/age-calculator-app/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/age-calculator-app/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Age Calculator App</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/newsletter-sign-up-with-success-message/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img
+                class="project-thumbnail"
+                src="./frontendmentor/newsletter-sign-up-with-success-message/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Newsletter Sign-Up Form</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/faq-accordion-card/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/faq-accordion-card/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">FAQ Accordion Card</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla, No-JS</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/interactive-rating-component/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/interactive-rating-component/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Interactive Rating Component</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/interactive-card-details-form/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/interactive-card-details-form/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Interactive Card Details Form</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla, imask.js</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/notifications-page/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/notifications-page/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Notifications Page</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/results-summary-component/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/results-summary-component/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Results Summary Component</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/profile-card-component/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/profile-card-component/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Profile Card Component</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/news-homepage/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/news-homepage/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">News Homepage</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/nft-preview-card-component/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/nft-preview-card-component/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">NFT Preview Card Component</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./frontendmentor/product-preview-card-component/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./frontendmentor/product-preview-card-component/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Product Preview Card Component</h3>
+                  <span class="project-detail">Frontend Mentor, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="web-freecodecamp">
+        <h2 class="section-title">
+          freeCodeCamp
+          <span class="viewall"
+            ><a href="https://www.freecodecamp.org/MGSimard/" target="_blank"
+              >View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a
+          ></span>
+        </h2>
+        <div class="grid-container">
+          <a href="./freecodecamp/build-a-pokemon-search-app/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/build-a-pokemon-search-app/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Pokémon Search App</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/OJBLBjd" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_games.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Video Game Sales</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/QWZLwRP" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_cloropleth.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Cloropleth Map</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/rNZXOer" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_heatmap.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Heat Map</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla, Dataviz, D3.js</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/ExeMZbN" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_calculator.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Javascript calculator</h3>
+                  <span class="project-detail">freeCodecamp, React</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/poOGqPP" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_markdown.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Markdown Previewer</h3>
+                  <span class="project-detail">freeCodecamp, React</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/abaXyrx" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_quote.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Random Quote Machine</h3>
+                  <span class="project-detail">freeCodecamp, React</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="https://codepen.io/MGSimard/full/PodgjXd" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/codepen/thumb_pomodoro.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Pomodoro Clock</h3>
+                  <span class="project-detail">freeCodecamp, React</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./freecodecamp/personal-portfolio-page/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/personal-portfolio-page/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Personal Portfolio</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./freecodecamp/survey-form/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/survey-form/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Sign-Up Form</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./freecodecamp/technical-documentation-page/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/technical-documentation-page/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Documentation Page</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./freecodecamp/tribute-page/index.html" target="_blank">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./freecodecamp/tribute-page/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Character Page</h3>
+                  <span class="project-detail">freeCodecamp, Vanilla</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small
+        >©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        MGSimard. All Rights Reserved.</small
+      >
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/preload.js"></script>
+  </body>
 </html>

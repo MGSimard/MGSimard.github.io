@@ -1,186 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MGSimard - Junk Flea</title>
-  <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio.">
-  <link rel="apple-touch-icon" sizes="180x180" href="../rss/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../rss/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../rss/favicon-16x16.png">
-  <link rel="manifest" href="../rss/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="../styles/global.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MGSimard - Junk Flea</title>
+    <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio." />
+    <link rel="apple-touch-icon" sizes="180x180" href="../rss/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../rss/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../rss/favicon-16x16.png" />
+    <link rel="manifest" href="../rss/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  
-<div id="preloader">
-  <div class='preloader'>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-  
-<nav id="mobile-nav">
-  <div id="burger-wrapper">
-    <a href="../index.html">
-      <div id="burger-title">
-        <img id="nav-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
-        <span>MGSimard</span>
+  <body>
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </a>
-    <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
-  </div>
-  <ul id="mobile-navlinks" class="navlinks">
-    <li class="navlink mLink" hidden><a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink mLink" hidden><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink mLink" hidden><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
+    </div>
 
-<nav id="desktop-nav">
-  <div id="profile-section">
-    <div id="profile-identifiers">
-      <div id="profile-icon-container">
+    <nav id="mobile-nav">
+      <div id="burger-wrapper">
         <a href="../index.html">
-          <img id="profile-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
+          <div id="burger-title">
+            <img id="nav-icon" alt="MGSimard Icon" src="../rss/avatar.jpg" />
+            <span>MGSimard</span>
+          </div>
         </a>
+        <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
       </div>
-      <div>
-        <h4 id="profile-name">MGSimard</h4>
-        <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
-      </div>
-    </div>
-    <div id="profile-info-container">
-      <div id="profile-info">
-        <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
-        <span class="profile-point"><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span>
-      </div>
-      <a href="mailto:g.marcgs@gmail.com" target="_top">
-        <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
-      </a>      
-    </div>
-    <div id="profile-bio">
-      <p><strong>Front-End Stack: HTML5/CSS3/JS (ES6+), TypeScript, React 18, Bootstrap, Wordpress, Divi.</strong></p>
-      <br>
-      <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
-      <br>
-      <p>Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a "Mapper".</p>
-    </div>
-  </div>
-  <ul class="navlinks">
-    <li class="navlink"><a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink"><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink"><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
-  
-<header id="header-junkflea">
-  <h1 id="page-title"><span>LEVEL DESIGN //</span> JUNK FLEA</h1>
-  <div class="header-divider"></div>
-</header>
-	
-<main>
-  <section>
-    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Junk Flea</span>
-    <h2 class="section-title">Junk Flea</h2>
-    <div class="section-grid g1-2x gm1 gallery">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/Core.webp">
-      <div>
-        <ul>
-          <li><strong>Platform:</strong>Halo Infinite Forge</li>
-          <li><strong>Genre:</strong>FPS, Gun Game</li>
-          <li><strong>Solo Project </strong></li>
-        </ul>
-        <br>
-        <p>Similarly to the previous project, "<a href="overdose.html">Overdose</a>", Junk Flea was also a recreation of a map originating from Combat Arms. This was also developed within Halo Infinite's Forge tool over the course of over 400 hours shortly after the tool's release. The process for this level was slightly different, rather than "eyeballing" it off of Youtube videos, I resorted to seeking out shady tools to rip the original map files out of Combat Arms. Once the original map files were acquired, I brought them into Blender to use as reference for measurements and positioning. Once again however, the level was entirely created with primitive shapes and stock Halo Infinite assets. The majority of props are actually primitive groups.</p>
-        <br>
-        <p>In this release I also introduced Gun Game to Halo Infinite - a script set which keeps track of a player's scoring on kill to change their weapon according to the corresponding index within a weapon list. The scripting is included within the last section of this article.</p>
-      </div>
-    </div>
-  </section>
+      <ul id="mobile-navlinks" class="navlinks">
+        <li class="navlink mLink" hidden>
+          <a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <section>
-    <h2 class="section-title">Gameplay</h2>
-    <div class="section-grid g2-1x gm1 gallery">
-      <div>
-        <p>Junk Flea's primary game modes are standard types of Free for All &amp; Team Deathmatch. Each team spawns within their own buildings at the beginning, and then eventually follows a dynamic spawn system across the map depending on threat proximity during the match. A night version was planned specifically for Quarantine (Infection) however due to a lack of specific nodes within Forge's script system, I had decided to put the night version on hold.</p>
-        <br>
-        <p>With the introduction of my Gun Game game mode/scripts alongside the map, an alternative version supporting it was also released. It follows the standard Gun Game ruleset; You gain a level upon killing opponents with your intended weapon and lose a level through being melee'd or self-inflicted death. Ammo can be replenished by killing an opponent with melee. The script system allows anyone to modify their own version in Forge simply by modifying the weapon list. Since the script is fully data-driven, score and all other settings automatically adjust to fit. Once a player cycles through all available weapons, they win the round.</p>
+    <nav id="desktop-nav">
+      <div id="profile-section">
+        <div id="profile-identifiers">
+          <div id="profile-icon-container">
+            <a href="../index.html">
+              <img id="profile-icon" alt="MGSimard Icon" src="../rss/avatar.jpg" />
+            </a>
+          </div>
+          <div>
+            <h4 id="profile-name">MGSimard</h4>
+            <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
+          </div>
+        </div>
+        <div id="profile-info-container">
+          <div id="profile-info">
+            <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
+            <span class="profile-point"
+              ><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span
+            >
+          </div>
+          <a href="mailto:g.marcgs@gmail.com" target="_top">
+            <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
+          </a>
+        </div>
+        <div id="profile-bio">
+          <p>
+            <strong
+              >Tech Stack: HTML5/CSS3/JS(ES6+), TypeScript, React 18, Next.js 15, Bootstrap, Wordpress, Divi,
+              PostgreSQL.</strong
+            >
+          </p>
+          <br />
+          <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
+          <br />
+          <p>
+            Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a
+            "Mapper".
+          </p>
+        </div>
       </div>
-      <img class="gswap" src="../rss/leveldesign/haloinfinite/junkflea/overhead2.webp">
-    </div>
-  </section>
-  
-  <section>
-    <h2 class="section-title">Gallery</h2>
-    <div class="section-grid g6x gallery">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/Core.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/base22.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/baseoutside2.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/Base1.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/LAV3.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/crane.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/crumble2.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/overpass.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/silos.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/silos2.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/overhead.webp">
-      <img src="../rss/leveldesign/haloinfinite/junkflea/backlane.webp">
-    </div>
-  </section>
-  
-  <section>
-    <h2 class="section-title">Scripting</h2>
-    <div class="section-grid g2-1x gm1">
-      <div>
-        <p>Not specific to Junk Flea, but since it was developed alongside it I decided to include the Gun Game script written for its first implementation. This prefab can be imported into any map to turn them into a Gun Game FFA compatible map made specifically for its custom game mode I created. Weapon lists, level up, kill confirmation, scoring etc all handled by the script prefab.</p>
+      <ul class="navlinks">
+        <li class="navlink">
+          <a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink">
+          <a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink">
+          <a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header id="header-junkflea">
+      <h1 id="page-title"><span>LEVEL DESIGN //</span> JUNK FLEA</h1>
+      <div class="header-divider"></div>
+    </header>
+
+    <main>
+      <section>
+        <span class="breadcrumbs"
+          ><a href="../level-design.html">Level Design</a> /
+          <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Junk Flea</span
+        >
+        <h2 class="section-title">Junk Flea</h2>
+        <div class="section-grid g1-2x gm1 gallery">
+          <img src="../rss/leveldesign/haloinfinite/junkflea/Core.webp" />
+          <div>
+            <ul>
+              <li><strong>Platform:</strong>Halo Infinite Forge</li>
+              <li><strong>Genre:</strong>FPS, Gun Game</li>
+              <li><strong>Solo Project </strong></li>
+            </ul>
+            <br />
+            <p>
+              Similarly to the previous project, "<a href="overdose.html">Overdose</a>", Junk Flea was also a recreation
+              of a map originating from Combat Arms. This was also developed within Halo Infinite's Forge tool over the
+              course of over 400 hours shortly after the tool's release. The process for this level was slightly
+              different, rather than "eyeballing" it off of Youtube videos, I resorted to seeking out shady tools to rip
+              the original map files out of Combat Arms. Once the original map files were acquired, I brought them into
+              Blender to use as reference for measurements and positioning. Once again however, the level was entirely
+              created with primitive shapes and stock Halo Infinite assets. The majority of props are actually primitive
+              groups.
+            </p>
+            <br />
+            <p>
+              In this release I also introduced Gun Game to Halo Infinite - a script set which keeps track of a player's
+              scoring on kill to change their weapon according to the corresponding index within a weapon list. The
+              scripting is included within the last section of this article.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Gameplay</h2>
+        <div class="section-grid g2-1x gm1 gallery">
+          <div>
+            <p>
+              Junk Flea's primary game modes are standard types of Free for All &amp; Team Deathmatch. Each team spawns
+              within their own buildings at the beginning, and then eventually follows a dynamic spawn system across the
+              map depending on threat proximity during the match. A night version was planned specifically for
+              Quarantine (Infection) however due to a lack of specific nodes within Forge's script system, I had decided
+              to put the night version on hold.
+            </p>
+            <br />
+            <p>
+              With the introduction of my Gun Game game mode/scripts alongside the map, an alternative version
+              supporting it was also released. It follows the standard Gun Game ruleset; You gain a level upon killing
+              opponents with your intended weapon and lose a level through being melee'd or self-inflicted death. Ammo
+              can be replenished by killing an opponent with melee. The script system allows anyone to modify their own
+              version in Forge simply by modifying the weapon list. Since the script is fully data-driven, score and all
+              other settings automatically adjust to fit. Once a player cycles through all available weapons, they win
+              the round.
+            </p>
+          </div>
+          <img class="gswap" src="../rss/leveldesign/haloinfinite/junkflea/overhead2.webp" />
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-grid g6x gallery">
+          <img src="../rss/leveldesign/haloinfinite/junkflea/Core.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/base22.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/baseoutside2.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/Base1.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/LAV3.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/crane.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/crumble2.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/overpass.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/silos.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/silos2.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/overhead.webp" />
+          <img src="../rss/leveldesign/haloinfinite/junkflea/backlane.webp" />
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Scripting</h2>
+        <div class="section-grid g2-1x gm1">
+          <div>
+            <p>
+              Not specific to Junk Flea, but since it was developed alongside it I decided to include the Gun Game
+              script written for its first implementation. This prefab can be imported into any map to turn them into a
+              Gun Game FFA compatible map made specifically for its custom game mode I created. Weapon lists, level up,
+              kill confirmation, scoring etc all handled by the script prefab.
+            </p>
+          </div>
+          <div class="section-grid g2x gswap gallery">
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_prefab.webp" />
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_setgoal.webp" />
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_weaponlist.webp" />
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_killcheck.webp" />
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_gungiver.webp" />
+            <img src="../rss/leveldesign/haloinfinite/junkflea/script_demotion.webp" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <span class="breadcrumbs"
+          ><a href="../level-design.html">Level Design</a> /
+          <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Junk Flea</span
+        >
+      </section>
+
+      <div id="lightbox" class="nodisplay">
+        <button id="lb-close"><i class="fa-solid fa-xmark"></i></button>
+        <div id="lb-img-container">
+          <img id="lightbox-img" src="" />
+          <div class="nodisplay" id="lb-arrows-container">
+            <button id="lb-previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="lb-next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
       </div>
-      <div class="section-grid g2x gswap gallery">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_prefab.webp">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_setgoal.webp">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_weaponlist.webp">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_killcheck.webp">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_gungiver.webp">
-        <img src="../rss/leveldesign/haloinfinite/junkflea/script_demotion.webp">
-      </div>
-    </div>
-  </section>
-  
-  <section>
-    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#halo-infinite">Halo Infinite</a> / Junk Flea</span>
-  </section>
-  
-  <div id="lightbox" class="nodisplay">
-    <button id="lb-close"><i class="fa-solid fa-xmark"></i></button>
-    <div id="lb-img-container">
-      <img id="lightbox-img" src="">
-      <div class="nodisplay" id="lb-arrows-container">
-        <button id="lb-previous"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="lb-next"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
-    </div>
-  </div>
-</main>
-	
-<footer>
-  <small>© <script>document.write(new Date().getFullYear())</script> MGSimard. All Rights Reserved.</small>
-</footer>
-	
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-<script src="../scripts/script.js"></script>
-<script src="../scripts/preload.js"></script>
-<script src="../scripts/lightbox.js"></script>
-</body>
+    </main>
+
+    <footer>
+      <small
+        >©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        MGSimard. All Rights Reserved.</small
+      >
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/preload.js"></script>
+    <script src="../scripts/lightbox.js"></script>
+  </body>
 </html>

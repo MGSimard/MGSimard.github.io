@@ -1,167 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MGSimard - mp_shop</title>
-  <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio.">
-  <link rel="apple-touch-icon" sizes="180x180" href="../rss/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../rss/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../rss/favicon-16x16.png">
-  <link rel="manifest" href="../rss/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="../styles/global.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MGSimard - mp_shop</title>
+    <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio." />
+    <link rel="apple-touch-icon" sizes="180x180" href="../rss/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../rss/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../rss/favicon-16x16.png" />
+    <link rel="manifest" href="../rss/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  
-<div id="preloader">
-  <div class='preloader'>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-  
-<nav id="mobile-nav">
-  <div id="burger-wrapper">
-    <a href="../index.html">
-      <div id="burger-title">
-        <img id="nav-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
-        <span>MGSimard</span>
+  <body>
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </a>
-    <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
-  </div>
-  <ul id="mobile-navlinks" class="navlinks">
-    <li class="navlink mLink" hidden><a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink mLink" hidden><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink mLink" hidden><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
+    </div>
 
-<nav id="desktop-nav">
-  <div id="profile-section">
-    <div id="profile-identifiers">
-      <div id="profile-icon-container">
+    <nav id="mobile-nav">
+      <div id="burger-wrapper">
         <a href="../index.html">
-          <img id="profile-icon" alt="MGSimard Icon" src="../rss/avatar.jpg">
+          <div id="burger-title">
+            <img id="nav-icon" alt="MGSimard Icon" src="../rss/avatar.jpg" />
+            <span>MGSimard</span>
+          </div>
         </a>
+        <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
       </div>
-      <div>
-        <h4 id="profile-name">MGSimard</h4>
-        <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
-      </div>
-    </div>
-    <div id="profile-info-container">
-      <div id="profile-info">
-        <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
-        <span class="profile-point"><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span>
-      </div>
-      <a href="mailto:g.marcgs@gmail.com" target="_top">
-        <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
-      </a>      
-    </div>
-    <div id="profile-bio">
-      <p><strong>Front-End Stack: HTML5/CSS3/JS (ES6+), TypeScript, React 18, Bootstrap, Wordpress, Divi.</strong></p>
-      <br>
-      <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
-      <br>
-      <p>Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a "Mapper".</p>
-    </div>
-  </div>
-  <ul class="navlinks">
-    <li class="navlink"><a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink"><a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink"><a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
-  
-<header id="header-mpshop">
-  <h1 id="page-title"><span>LEVEL DESIGN //</span> MP_SHOP</h1>
-  <div class="header-divider"></div>
-</header>
-	
-<main>
-  <section>
-    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#roblox-studio">Roblox Studio</a> / mp_shop</span>
-    <h2 class="section-title">mp_shop</h2>
-    <div class="section-grid g1-2x gm1 gallery">
-      <img src="../rss/leveldesign/roblox/mpshop/roof.webp">
-      <div>
-        <ul>
-          <li><strong>Platform:</strong>Roblox Studio</li>
-          <li><strong>Genre:</strong>FPS</li>
-          <li><strong>Solo Project</strong></li>
-        </ul>
-        <br>
-        <p>Circa 2020. A classic recreation of one of Soldier of Fortune II: Double Helix' (2002) most iconic maps, "mp_shop". It was one of the more popular maps in the original game, and was the one map included in the base version of the game's multiplayer test demo which used to house a very large community. As per most other projects the motivation behind making this was purely for fun, and in this case was made within Roblox Studio. Apart from the helicopter model which I borrowed, everything else was made purely out of primitive objects, custom textures and decals.</p>
-      </div>
-    </div>
-  </section>
+      <ul id="mobile-navlinks" class="navlinks">
+        <li class="navlink mLink" hidden>
+          <a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <section>
-    <h2 class="section-title">Gameplay</h2>
-    <div class="section-grid g2-1x gm1 gallery">
-      <div>
-        <p>Deathmatch, Team Deatchmatch and Infiltration were the main standard game modes played on this map. Generally, teams would spawn on opposite "ends" of the map, one on the lower floor at the end of a hallway and the other on the helipad. Both teams would usually meet near the patio and lobby area.</p>
-        <br>
-        <p>The map was also widely played with custom game modes, more notably the likes of Cops &amp; Robbers, which included custom rulesets like decreased gravity and increased movement speed. All of which could also be emulated on my own version of the map within Roblox. Though not completely finished as the map still necessitated additional furnishing in certain areas such as the kitchen and office spaces, it still contained a fully functional TDM system, spawns etc. I also took artistical liberty in populating the helipad with an elevated area, pipes and fence as the original version was simple flat roof with an H on it.</p>
+    <nav id="desktop-nav">
+      <div id="profile-section">
+        <div id="profile-identifiers">
+          <div id="profile-icon-container">
+            <a href="../index.html">
+              <img id="profile-icon" alt="MGSimard Icon" src="../rss/avatar.jpg" />
+            </a>
+          </div>
+          <div>
+            <h4 id="profile-name">MGSimard</h4>
+            <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
+          </div>
+        </div>
+        <div id="profile-info-container">
+          <div id="profile-info">
+            <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
+            <span class="profile-point"
+              ><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span
+            >
+          </div>
+          <a href="mailto:g.marcgs@gmail.com" target="_top">
+            <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
+          </a>
+        </div>
+        <div id="profile-bio">
+          <p>
+            <strong
+              >Tech Stack: HTML5/CSS3/JS(ES6+), TypeScript, React 18, Next.js 15, Bootstrap, Wordpress, Divi,
+              PostgreSQL.</strong
+            >
+          </p>
+          <br />
+          <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
+          <br />
+          <p>
+            Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a
+            "Mapper".
+          </p>
+        </div>
       </div>
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby.webp">
-    </div>
-  </section>
-  
-  <section>
-    <h2 class="section-title">Gallery</h2>
-    <div class="section-grid g6x gallery">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/roof.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Pipes.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Ledge.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Elevator.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Stairs.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Spawn.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Kitchen.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby2.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Conference.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Hallway.webp">
-      <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Office.webp">
-    </div>
-  </section>
-  
-  <section>
-    <span class="breadcrumbs"><a href="../level-design.html">Level Design</a> / <a href="../level-design.html#roblox-studio">Roblox Studio</a> / mp_shop</span>
-  </section>
-    
-  <div id="lightbox" class="nodisplay">
-    <button id="lb-close"><i class="fa-solid fa-xmark"></i></button>
-    <div id="lb-img-container">
-      <img id="lightbox-img" src="">
-      <div class="nodisplay" id="lb-arrows-container">
-        <button id="lb-previous"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="lb-next"><i class="fa-solid fa-chevron-right"></i></button>
+      <ul class="navlinks">
+        <li class="navlink">
+          <a href="../index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink">
+          <a href="../web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink">
+          <a href="../level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header id="header-mpshop">
+      <h1 id="page-title"><span>LEVEL DESIGN //</span> MP_SHOP</h1>
+      <div class="header-divider"></div>
+    </header>
+
+    <main>
+      <section>
+        <span class="breadcrumbs"
+          ><a href="../level-design.html">Level Design</a> /
+          <a href="../level-design.html#roblox-studio">Roblox Studio</a> / mp_shop</span
+        >
+        <h2 class="section-title">mp_shop</h2>
+        <div class="section-grid g1-2x gm1 gallery">
+          <img src="../rss/leveldesign/roblox/mpshop/roof.webp" />
+          <div>
+            <ul>
+              <li><strong>Platform:</strong>Roblox Studio</li>
+              <li><strong>Genre:</strong>FPS</li>
+              <li><strong>Solo Project</strong></li>
+            </ul>
+            <br />
+            <p>
+              Circa 2020. A classic recreation of one of Soldier of Fortune II: Double Helix' (2002) most iconic maps,
+              "mp_shop". It was one of the more popular maps in the original game, and was the one map included in the
+              base version of the game's multiplayer test demo which used to house a very large community. As per most
+              other projects the motivation behind making this was purely for fun, and in this case was made within
+              Roblox Studio. Apart from the helicopter model which I borrowed, everything else was made purely out of
+              primitive objects, custom textures and decals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Gameplay</h2>
+        <div class="section-grid g2-1x gm1 gallery">
+          <div>
+            <p>
+              Deathmatch, Team Deatchmatch and Infiltration were the main standard game modes played on this map.
+              Generally, teams would spawn on opposite "ends" of the map, one on the lower floor at the end of a hallway
+              and the other on the helipad. Both teams would usually meet near the patio and lobby area.
+            </p>
+            <br />
+            <p>
+              The map was also widely played with custom game modes, more notably the likes of Cops &amp; Robbers, which
+              included custom rulesets like decreased gravity and increased movement speed. All of which could also be
+              emulated on my own version of the map within Roblox. Though not completely finished as the map still
+              necessitated additional furnishing in certain areas such as the kitchen and office spaces, it still
+              contained a fully functional TDM system, spawns etc. I also took artistical liberty in populating the
+              helipad with an elevated area, pipes and fence as the original version was simple flat roof with an H on
+              it.
+            </p>
+          </div>
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby.webp" />
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-grid g6x gallery">
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/roof.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Pipes.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Ledge.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Elevator.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Stairs.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Spawn.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Kitchen.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby2.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Lobby.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Conference.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Hallway.webp" />
+          <img class="gswap" src="../rss/leveldesign/roblox/mpshop/Office.webp" />
+        </div>
+      </section>
+
+      <section>
+        <span class="breadcrumbs"
+          ><a href="../level-design.html">Level Design</a> /
+          <a href="../level-design.html#roblox-studio">Roblox Studio</a> / mp_shop</span
+        >
+      </section>
+
+      <div id="lightbox" class="nodisplay">
+        <button id="lb-close"><i class="fa-solid fa-xmark"></i></button>
+        <div id="lb-img-container">
+          <img id="lightbox-img" src="" />
+          <div class="nodisplay" id="lb-arrows-container">
+            <button id="lb-previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="lb-next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</main>
-	
-<footer>
-  <small>© <script>document.write(new Date().getFullYear())</script> MGSimard. All Rights Reserved.</small>
-</footer>
-	
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-<script src="../scripts/script.js"></script>
-<script src="../scripts/preload.js"></script>
-<script src="../scripts/lightbox.js"></script>
-</body>
+    </main>
+
+    <footer>
+      <small
+        >©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        MGSimard. All Rights Reserved.</small
+      >
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/preload.js"></script>
+    <script src="../scripts/lightbox.js"></script>
+  </body>
 </html>

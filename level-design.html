@@ -1,270 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MGSimard - Level Design</title>
-  <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./rss/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./rss/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./rss/favicon-16x16.png">
-  <link rel="manifest" href="./rss/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="./styles/global.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MGSimard - Level Design</title>
+    <meta name="description" content="MGSimard's Front End Development & Level Design/Environmental Art Portfolio." />
+    <link rel="apple-touch-icon" sizes="180x180" href="./rss/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./rss/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./rss/favicon-16x16.png" />
+    <link rel="manifest" href="./rss/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0f37b175f5.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  
-<div id="preloader">
-  <div class='preloader'>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-  
-<nav id="mobile-nav">
-  <div id="burger-wrapper">
-    <a href="./index.html">
-      <div id="burger-title">
-        <img id="nav-icon" alt="MGSimard Icon" src="./rss/avatar.jpg">
-        <span>MGSimard</span>
+  <body>
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </a>
-    <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
-  </div>
-  <ul id="mobile-navlinks" class="navlinks">
-    <li class="navlink mLink" hidden><a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink mLink" hidden><a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink mLink active" hidden><a href="#"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
+    </div>
 
-<nav id="desktop-nav">
-  <div id="profile-section">
-    <div id="profile-identifiers">
-      <div id="profile-icon-container">
+    <nav id="mobile-nav">
+      <div id="burger-wrapper">
         <a href="./index.html">
-          <img id="profile-icon" alt="MGSimard Icon" src="./rss/avatar.jpg">
+          <div id="burger-title">
+            <img id="nav-icon" alt="MGSimard Icon" src="./rss/avatar.jpg" />
+            <span>MGSimard</span>
+          </div>
         </a>
+        <button id="burger-button"><i class="fa-solid fa-bars"></i></button>
       </div>
-      <div>
-        <h4 id="profile-name">MGSimard</h4>
-        <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
-      </div>
-    </div>
-    <div id="profile-info-container">
-      <div id="profile-info">
-        <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
-        <span class="profile-point"><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span>
-      </div>
-      <a href="mailto:g.marcgs@gmail.com" target="_top">
-        <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
-      </a>      
-    </div>
-    <div id="profile-bio">
-      <p><strong>Front-End Stack: HTML5/CSS3/JS (ES6+), TypeScript, React 18, Bootstrap, Wordpress, Divi.</strong></p>
-      <br>
-      <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
-      <br>
-      <p>Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a "Mapper".</p>
-    </div>
-  </div>
-  <ul class="navlinks">
-    <li class="navlink"><a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-    <li class="navlink"><a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a></li>
-    <li class="navlink active"><a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a></li>
-    <li class="navlink"><a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"><i class="fa-solid fa-file fa-fw"></i>Download Resume</a></li>
-  </ul>
-</nav>
-  
-<header>
-  <h1 id="page-title"><span>LEVEL DESIGN &amp;</span> ENVIRONMENTAL ART</h1>
-  <div class="header-divider"></div>
-</header>
-	
-<main>
-  <section id="unreal-engine">
-    <h2 class="section-title">Unreal Engine 5</h2>
-    <div class="grid-container">
-      <a href="./unreal-engine/terminal.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/unrealengine/terminal/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Terminal (WIP)</h3>
-              <span class="project-detail">Unreal Engine, Blockout, Work in Progress</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="halo-infinite">
-    <h2 class="section-title">Halo Infinite Forge</h2>
-    <div class="grid-container">
-      <a href="./halo-infinite/overdose.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/overdose/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Overdose</h3>
-              <span class="project-detail">Halo Infinite Forge, Remake</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./halo-infinite/junk-flea.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/junkflea/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Junk Flea</h3>
-              <span class="project-detail">Halo Infinite Forge, Remake</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./halo-infinite/lake-hot-pursuit.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/hotpursuit/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Lake Hot Pursuit</h3>
-              <span class="project-detail">Halo Infinite Forge, Original</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="tower-unite">
-    <h2 class="section-title">Tower Unite</h2>
-    <div class="grid-container">
-      <a href="./tower-unite/station-58.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/towerunite/station58/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Station 58</h3>
-              <span class="project-detail">Tower Unite, Original</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./tower-unite/lumbridge-castle.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/towerunite/lumbridgecastle/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Lumbridge Castle</h3>
-              <span class="project-detail">Tower Unite, Social</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./tower-unite/quindecim.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/towerunite/quindecim/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Quindecim</h3>
-              <span class="project-detail">Tower Unite, Social</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./tower-unite/exploded-cinema.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/towerunite/explodedcinema/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Exploded Cinema</h3>
-              <span class="project-detail">Tower Unite, Social</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./tower-unite/misc.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/towerunite/misc/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Misc</h3>
-              <span class="project-detail">Tower Unite</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  <section id="roblox-studio">
-    <h2 class="section-title">Roblox Studio</h2>
-    <div class="grid-container">
-      <a href="./roblox-studio/mp_shop.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/roblox/mpshop/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">mp_shop</h3>
-              <span class="project-detail">Roblox Studio, Remake</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-      <a href="./roblox-studio/q3dm17.html">
-        <figure class="project">
-          <div class="project-overlay"></div>
-          <img class="project-thumbnail" src="./rss/leveldesign/roblox/q3dm17/thumb.webp">
-          <figcaption class="project-caption">
-            <img class="project-icon" src="./rss/avatar.jpg">
-            <div>
-              <h3 class="project-title">Q3DM17</h3>
-              <span class="project-detail">Roblox Studio, Remake</span>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </section>
-  
+      <ul id="mobile-navlinks" class="navlinks">
+        <li class="navlink mLink" hidden>
+          <a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink mLink" hidden>
+          <a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink mLink active" hidden>
+          <a href="#"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-</main>
-	
-<footer>
-  <small>© <script>document.write(new Date().getFullYear())</script> MGSimard. All Rights Reserved.</small>
-</footer>
-	
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-<script src="./scripts/script.js"></script>
-<script src="./scripts/preload.js"></script>
-</body>
+    <nav id="desktop-nav">
+      <div id="profile-section">
+        <div id="profile-identifiers">
+          <div id="profile-icon-container">
+            <a href="./index.html">
+              <img id="profile-icon" alt="MGSimard Icon" src="./rss/avatar.jpg" />
+            </a>
+          </div>
+          <div>
+            <h4 id="profile-name">MGSimard</h4>
+            <span id="profile-tagline">Multidisciplinary Developer &amp; Artist</span>
+          </div>
+        </div>
+        <div id="profile-info-container">
+          <div id="profile-info">
+            <span class="profile-point"><i class="fa-solid fa-location-dot"></i>Quebec, Canada</span>
+            <span class="profile-point"
+              ><i class="fa-solid fa-globe"></i><a class="profile-link" href="">mgsimard.github.io</a></span
+            >
+          </div>
+          <a href="mailto:g.marcgs@gmail.com" target="_top">
+            <button id="profile-message" class="btn-secondary"><i class="fa-regular fa-envelope"></i>Send Email</button>
+          </a>
+        </div>
+        <div id="profile-bio">
+          <p>
+            <strong
+              >Tech Stack: HTML5/CSS3/JS(ES6+), TypeScript, React 18, Next.js 15, Bootstrap, Wordpress, Divi,
+              PostgreSQL.</strong
+            >
+          </p>
+          <br />
+          <p>Worked professionally in Freelance QA, UI/UX and Usability Testing for web apps &amp; video games.</p>
+          <br />
+          <p>
+            Level Designer &amp; Environmental Artist primarily through level editors — conventionally referred to as a
+            "Mapper".
+          </p>
+        </div>
+      </div>
+      <ul class="navlinks">
+        <li class="navlink">
+          <a href="./index.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+        </li>
+        <li class="navlink">
+          <a href="./web-development.html"><i class="fa-solid fa-code fa-fw"></i>Web Development</a>
+        </li>
+        <li class="navlink active">
+          <a href="./level-design.html"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Level Design</a>
+        </li>
+        <li class="navlink">
+          <a href="./rss/Marc-Olivier%20Gendron-Simard%20Resume.pdf" download="Marc-Olivier Gendron-Simard Resume.pdf"
+            ><i class="fa-solid fa-file fa-fw"></i>Download Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1 id="page-title"><span>LEVEL DESIGN &amp;</span> ENVIRONMENTAL ART</h1>
+      <div class="header-divider"></div>
+    </header>
+
+    <main>
+      <section id="unreal-engine">
+        <h2 class="section-title">Unreal Engine 5</h2>
+        <div class="grid-container">
+          <a href="./unreal-engine/terminal.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/unrealengine/terminal/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Terminal (WIP)</h3>
+                  <span class="project-detail">Unreal Engine, Blockout, Work in Progress</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="halo-infinite">
+        <h2 class="section-title">Halo Infinite Forge</h2>
+        <div class="grid-container">
+          <a href="./halo-infinite/overdose.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/overdose/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Overdose</h3>
+                  <span class="project-detail">Halo Infinite Forge, Remake</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./halo-infinite/junk-flea.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/junkflea/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Junk Flea</h3>
+                  <span class="project-detail">Halo Infinite Forge, Remake</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./halo-infinite/lake-hot-pursuit.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/haloinfinite/hotpursuit/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Lake Hot Pursuit</h3>
+                  <span class="project-detail">Halo Infinite Forge, Original</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="tower-unite">
+        <h2 class="section-title">Tower Unite</h2>
+        <div class="grid-container">
+          <a href="./tower-unite/station-58.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/towerunite/station58/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Station 58</h3>
+                  <span class="project-detail">Tower Unite, Original</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./tower-unite/lumbridge-castle.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/towerunite/lumbridgecastle/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Lumbridge Castle</h3>
+                  <span class="project-detail">Tower Unite, Social</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./tower-unite/quindecim.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/towerunite/quindecim/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Quindecim</h3>
+                  <span class="project-detail">Tower Unite, Social</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./tower-unite/exploded-cinema.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/towerunite/explodedcinema/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Exploded Cinema</h3>
+                  <span class="project-detail">Tower Unite, Social</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./tower-unite/misc.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/towerunite/misc/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Misc</h3>
+                  <span class="project-detail">Tower Unite</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <section id="roblox-studio">
+        <h2 class="section-title">Roblox Studio</h2>
+        <div class="grid-container">
+          <a href="./roblox-studio/mp_shop.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/roblox/mpshop/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">mp_shop</h3>
+                  <span class="project-detail">Roblox Studio, Remake</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./roblox-studio/q3dm17.html">
+            <figure class="project">
+              <div class="project-overlay"></div>
+              <img class="project-thumbnail" src="./rss/leveldesign/roblox/q3dm17/thumb.webp" />
+              <figcaption class="project-caption">
+                <img class="project-icon" src="./rss/avatar.jpg" />
+                <div>
+                  <h3 class="project-title">Q3DM17</h3>
+                  <span class="project-detail">Roblox Studio, Remake</span>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small
+        >©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        MGSimard. All Rights Reserved.</small
+      >
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/preload.js"></script>
+  </body>
 </html>
