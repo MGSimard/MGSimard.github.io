@@ -708,6 +708,9 @@ button,
 
 @media only screen and (max-width: 599px) {
   /* PROJECT VITRINE */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
   .project-icon {
     width: 16vw;
     height: 16vw;
