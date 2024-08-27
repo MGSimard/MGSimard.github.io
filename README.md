@@ -6,7 +6,7 @@
 Web Development & Level Design
 <br/>
 <br/>
-<a href="https://www.mgsimard.github.io" target="_blank">mgsimard.github.io</a>
+<a href="https://mgsimard.github.io/" target="_blank">mgsimard.github.io</a>
 </p>
 </div>
 
