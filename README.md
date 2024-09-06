@@ -16,6 +16,8 @@ Web Development & Level Design
 
 This V2 was coded purely in vanilla html/css/js using Adobe Brackets before picking up React, VSCode, Git and all that. Should contain my main projects up to current date, along with my old challenges from freeCodeCamp & Frontend Mentor. Also contains gamedev stuff I do as a hobby.
 
+I plan on eventually developing a new portfolio based on React.
+
 ## Contact
 
 MGSimard - g.marcgs@gmail.com  
