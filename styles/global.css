@@ -73,7 +73,7 @@ header {
   background-size: cover;
 }
 #header-deathrun {
-  background: var(--clrBG) url(../rss/leveldesign/haloinfinite/hotpursuit/header.webp) no-repeat center center;
+  background: var(--clrBG) url(../rss/leveldesign/haloinfinite/deathrun/1.webp) no-repeat center center;
   background-size: cover;
 }
 #header-lumbridge {
