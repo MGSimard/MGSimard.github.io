@@ -240,6 +240,10 @@ ul {
 strong {
   margin-right: 0.5rem;
 }
+video {
+  object-fit: contain;
+}
+/**/
 .breadcrumbs {
   display: block;
   margin-bottom: 2rem;
