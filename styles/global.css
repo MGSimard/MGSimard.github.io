@@ -241,6 +241,7 @@ strong {
   margin-right: 0.5rem;
 }
 video {
+  width: 100%;
   object-fit: contain;
 }
 /**/
