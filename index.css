@@ -1,5 +1,52 @@
+:root {
+  --clrPrimary: hsl(0, 95%, 62%); /* Imperial Red */
+  --clrBg: hsl(240, 11%, 7%); /* Night */
+  --clrBgLight: hsl(240, 6%, 13%); /* Raisin Black */
+  --clrHeading: hsl(0, 0%, 100%); /* White */
+  --clrText: hsl(240, 9%, 91%); /* Offwhite */
+  --clrDetail: hsl(0, 0%, 67%); /* Silver */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: var(--clrText);
+  background-color: var(--clrBg);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  min-height: 100dvh;
+}
+/* DEFAULTS */
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  color: var(--clrPrimary);
+}
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* TABLE */
+table {
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 0.5rem;
 }
