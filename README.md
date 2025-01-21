@@ -1,26 +1,17 @@
-<br/>
-<div align="center">
+# MGSimard's Storage
 
-<h1 align="center">MGSimard's Portfolio</h1>
-<p align="center">
-Web Development & Level Design
-<br/>
-<br/>
-<a href="https://mgsimard.github.io/" target="_blank">mgsimard.github.io</a>
-</p>
-</div>
+> This domain no longer hosts MGSimard's Portfolio - It can now be found at https://mgsimard.dev/.
 
-## About The Project
-
-![Portfolio Screenshot](https://i.imgur.com/UPd52Bi.jpeg)
-
-This V2 was coded purely in vanilla html/css/js using Adobe Brackets before picking up React, VSCode, Git and all that. Should contain my main projects up to current date, along with my old challenges from freeCodeCamp & Frontend Mentor. Also contains gamedev stuff I do as a hobby.
-
-I plan on eventually developing a new portfolio based on React.
+**Looking for something?**  
+Thing | Link
+------------ | -------------
+&nbsp;Portfolio&nbsp; | &nbsp;https://mgsimard.dev/&nbsp;
+&nbsp;GitHub&nbsp; | &nbsp;https://github.com/MGSimard/&nbsp;
+&nbsp;X/Twitter&nbsp; | &nbsp;https://x.com/MGSimard&nbsp;
 
 ## Contact
 
-MGSimard - g.marcgs@gmail.com  
+MGSimard - mgsimard.dev@gmail.com
 [@MGSimard on X](https://x.com/MGSimard)
 
-For more info, view my portfolio at [mgsimard.github.io](https://mgsimard.github.io). Resume attached.
+For more info, view my portfolio at [mgsimard.dev](https://mgsimard.dev). Resume attached.
